@@ -12,3 +12,22 @@ Du kannst auch gerne die Rubriken nach ITIl 4 nutzen (müssten noch in die Tabel
  Mir ist nur wichtig, das sichtbar, was ist direkte Kundenerfahrung (Front Desk und Self Service Aktivitäten) und was läuft im Hintergrund und ist eine Mitarbeitererfahrung.
 Wesentlich für die IT-Services (Erstellung, Änderung, Erbringung/Bereitstellung) ist, dass alle IT-Abteilung in ihren Disziplinen beteiligt sind.
 Das soll Ziel der Darstellung sein
+
+✅ Empfohlene Python-Version & Tools
+Komponente	Empfehlung
+🐍 Python-Version	Python 3.10 oder 3.11 (nicht 3.12, da manche Bibliotheken dort noch Probleme haben)
+📦 Library für SharePoint Online	office365-rest-python-client (aktuellster & stabilster Zugriff)
+💾 Datenverarbeitung	pandas
+🔄 Zeitgesteuerte Ausführung (optional)	Windows Task Scheduler, cron, Azure Function
+
+✅ Was mit Python 3.7.3 möglich ist
+Aufgabe	Status	Hinweise
+📊 pandas nutzen	✅ Ja	Bis zur aktuellen Version kompatibel
+🔌 office365-rest-python-client	✅ Ja	Läuft ab Python 3.6 aufwärts
+📥 SharePoint-Daten abrufen	✅ Ja	Du kannst die Liste abrufen & verarbeiten
+📁 Export nach CSV/Excel	✅ Ja	via pandas.to_csv() oder to_excel()
+⚙ Bibliotheken installieren	✅ Ja	mit pip install --user oder per Auftrag
+
+
+| Für das Projektziel (SharePoint + Power BI CSV) | ➕ Python 3.7.3 ist ausreichend |
+| Für mittelfristige Zukunft / Automatisierung | 🔁 Upgrade auf 3.10/3.11 sinnvoll (wenn möglich) |
