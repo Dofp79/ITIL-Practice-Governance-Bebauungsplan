@@ -28,8 +28,8 @@ Aufgabe	Status	Hinweise
 📁 Export nach CSV/Excel	✅ Ja	via pandas.to_csv() oder to_excel()
 ⚙ Bibliotheken installieren	✅ Ja	mit pip install --user oder per Auftrag
 
-Ok, aber wenn ich Python Bekomme wir integriere ich das mit Power Bi Desktop ?
 
+Ok, aber wenn ich Python Bekomme wir integriere ich das mit Power Bi Desktop ?
 
 ChatGPT:
 Perfekte Frage! Wenn du Python auf deinem Rechner hast (z. B. 3.7.3), kannst du es nahtlos mit Power BI Desktop integrieren, um z. B.:
@@ -38,7 +38,7 @@ SharePoint-Daten via Python-Skript zu laden
 
 CSVs automatisch erzeugt von Python zu laden
 
-Python direkt als Transformations- oder Analysequelle in Power BI zu verwenden
+### Python direkt als Transformations- oder Analysequelle in Power BI zu verwenden ###
 
 🔁 Drei Wege, Python in Power BI zu integrieren
 ✅ 1. Python-Skript als Datenquelle verwenden
