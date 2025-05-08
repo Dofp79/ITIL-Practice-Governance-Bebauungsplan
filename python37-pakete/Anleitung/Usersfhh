@@ -16,10 +16,6 @@
               10 Datei(en),      2.003.580 Bytes
                2 Verzeichnis(se), 141.353.185.280 Bytes frei
 
-C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user *.whl
-Requirement '*.whl' looks like a filename, but the file does not exist
-*.whl is not a valid wheel filename.
-
 C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user certifi-2025.4.26-py3-none-any.whl
 Processing c:\users\pp021887\python-pakete\certifi-2025.4.26-py3-none-any.whl
 Installing collected packages: certifi
@@ -29,3 +25,32 @@ C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" 
 Processing c:\users\pp021887\python-pakete\idna-3.10-py3-none-any.whl
 Installing collected packages: idna
 Successfully installed idna-3.10
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user msal-1.32.3-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\msal-1.32.3-py3-none-any.whl
+Collecting requests<3,>=2.0.0 (from msal==1.32.3)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03F7B1D0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/requests/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03F7B510>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/requests/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03F7B5F0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/requests/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03F7B6D0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/requests/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03F7B7B0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/requests/
+  Could not find a version that satisfies the requirement requests<3,>=2.0.0 (from msal==1.32.3) (from versions: )
+No matching distribution found for requests<3,>=2.0.0 (from msal==1.32.3)
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user requests-2.31.0-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\requests-2.31.0-py3-none-any.whl
+Collecting charset-normalizer<4,>=2 (from requests==2.31.0)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03DF2590>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/charset-normalizer/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03DF2410>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/charset-normalizer/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03DF2910>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/charset-normalizer/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03DF29F0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/charset-normalizer/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03DF2AD0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/charset-normalizer/
+  Could not find a version that satisfies the requirement charset-normalizer<4,>=2 (from requests==2.31.0) (from versions: )
+No matching distribution found for charset-normalizer<4,>=2 (from requests==2.31.0)
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user charset_normalizer-2.1.1-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\charset_normalizer-2.1.1-py3-none-any.whl
+Installing collected packages: charset-normalizer
+  The script normalizer.exe is installed in 'C:\Users\PP021887\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed charset-normalizer-2.1.1
