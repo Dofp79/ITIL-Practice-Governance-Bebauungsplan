@@ -1,0 +1,52 @@
+
+📋 Tageszusammenfassung – 08.05.2025
+Thema: Automatisierter Datenabruf aus SharePoint zur Power BI-Datenversorgung mittels Python
+Kontext: Datenanalyse & Reporting im ITIL 4-Umfeld ohne Power BI Service
+
+🔧 1. Technische Umgebung analysiert
+Power BI Desktop wird auf einem VPN-Rechner verwendet
+
+Kein Power BI Service, keine SQL-Datenbank, keine App Factory
+
+Python 3.7.9 (32-bit) ist lokal installiert
+
+Keine Adminrechte auf dem VPN-System, ZIP-Übertragungen gesperrt
+
+🧠 2. Strategische Lösung entwickelt
+Aufbau eines lokalen, automatisierten Prozesses:
+
+SharePoint Online → Python → CSV-Datei → Power BI Desktop
+
+Bibliotheken werden offline vorbereitet und als .whl → .txt übertragen
+
+Übertragung via E-Mail oder GitHub (ohne ZIP, ohne Cloud)
+
+📦 3. Kompatible Python-Bibliotheken identifiziert und gesammelt
+Insgesamt 17 .whl-Pakete für Python 3.7.9 (32-bit) vorbereitet:
+
+Hauptpakete	Zweck
+pandas, numpy	Datenanalyse, CSV-Erstellung für Power BI
+Office365-REST-Python-Client	Zugriff auf SharePoint via REST API
+requests, msal, PyJWT	Microsoft Authentifizierung / Token Handling
+certifi, urllib3, idna, charset_normalizer	Sichere HTTPS-Kommunikation
+python_dateutil, pytz	Zeitachsen & Kalenderlogik
+cryptography, cffi, pycparser, typing_extensions, six	Infrastruktur- und Kompatibilitätslayer
+
+🧭 4. Argumentationsrahmen nach ITIL 4 Prinzipien aufgebaut
+Fokussiere dich auf den Wert: Effizientere Entscheidungsgrundlagen
+
+Halte es einfach & praktisch: Kein Service nötig, alles lokal
+
+Optimiere & automatisiere: Reduktion manueller Arbeit & Fehlerquellen
+
+Beginne dort, wo du stehst: Power BI Desktop & SharePoint sind vorhanden
+
+Kollaboriere & fördere Transparenz: Dokumentierter, nachvollziehbarer Datenprozess
+
+✅ 5. Ergebnis
+Lokale Python-Umgebung erfolgreich vorbereitet
+
+.whl-Pakete installiert, Installationsprobleme mit Abhängigkeiten identifiziert & gelöst
+
+Argumentation für morgen vollständig aufgebaut (technisch + strategisch)
+
