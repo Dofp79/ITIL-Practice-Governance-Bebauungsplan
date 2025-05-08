@@ -30,7 +30,7 @@ echo.
 echo [INFO] Installation abgeschlossen.
 pause
 
-REM ✅ So verwendest du es:
+REM So verwendest du es:
 REM Öffne Notepad
 
 REM Kopiere den obigen Inhalt hinein
