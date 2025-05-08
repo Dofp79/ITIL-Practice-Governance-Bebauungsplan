@@ -1,0 +1,32 @@
+Nächste Schritte
+1. Umbenennen in .txt (für E-Mail/GitHub)
+Falls du die Dateien per E-Mail oder GitHub überträgst und .whl blockiert ist, führe im gleichen Verzeichnis aus:
+
+cmd
+Kopieren
+Bearbeiten
+ren *.whl *.txt
+
+2. Auf dem VPN-Rechner
+Lade die .txt-Dateien herunter (per E-Mail oder über ein GitHub-Repository)
+
+Speichere sie z. B. unter C:\python-pakete
+
+Benenne sie zurück:
+
+cmd
+Kopieren
+Bearbeiten
+ren *.txt *.whl
+Installiere alle Pakete lokal ohne Adminrechte:
+
+cmd
+Kopieren
+Bearbeiten
+pip install --user *.whl
+Alternativ bei Problemen mit pip:
+
+cmd
+Kopieren
+Bearbeiten
+python -m pip install --user *.whl
