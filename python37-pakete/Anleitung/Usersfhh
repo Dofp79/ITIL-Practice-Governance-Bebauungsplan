@@ -54,3 +54,27 @@ Installing collected packages: charset-normalizer
   The script normalizer.exe is installed in 'C:\Users\PP021887\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed charset-normalizer-2.1.1
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user requests-2.31.0-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\requests-2.31.0-py3-none-any.whl
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\pp021887\appdata\roaming\python\python37\site-packages (from requests==2.31.0) (2025.4.26)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\pp021887\appdata\roaming\python\python37\site-packages (from requests==2.31.0) (2.1.1)
+Collecting urllib3<3,>=1.21.1 (from requests==2.31.0)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03C85E50>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/urllib3/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03CB2310>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/urllib3/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03CB23F0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/urllib3/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03CB24D0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/urllib3/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03CB25B0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/urllib3/
+  Could not find a version that satisfies the requirement urllib3<3,>=1.21.1 (from requests==2.31.0) (from versions: )
+No matching distribution found for urllib3<3,>=1.21.1 (from requests==2.31.0)
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user Office365_REST_Python_Client-2.6.1-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\office365_rest_python_client-2.6.1-py3-none-any.whl
+Collecting typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489770>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489AB0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489B90>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489C70>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489D50>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
+  Could not find a version that satisfies the requirement typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1) (from versions: )
+No matching distribution found for typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1)
