@@ -1,0 +1,60 @@
+-- ===========================================
+-- Power BI Datenmodell: ITIL Practice Governance & Bebauungsplan
+-- ===========================================
+
+-- 1. Tabelle: tbl_ITIL_Practice_Status
+-- Quelle: CSV / Excel aus Practice-Katalog
+-- Enthält zentrale Informationen zu Reifegrad, Nutzung, Phase usw.
+
+-- Beispielhafte DAX-Spalten (berechnete Felder):
+Ampel_Reifegrad = 
+SWITCH(TRUE(),
+    [Reifegrad_Num] = 0, "Kritisch",
+    [Reifegrad_Num] = 1, "Mittel",
+    [Reifegrad_Num] >= 2, "Gut",
+    BLANK()
+)
+
+-- 2. Tabelle: tbl_ITIL_Bebauungsplan_Map
+-- Mapping-Tabelle für Bebauungsplan-Zuordnung
+-- Enthält Practice-Namen, Bereich (Frontdesk, Backdesk etc.), Phase, Stufe (1–3)
+
+-- Beispielspalten:
+-- Practice | Bereich | Phase | Stufe
+
+-- 3. Dimensionstabelle: tbl_Phase_Legende
+-- Für strukturierte Filter und Gruppierungen
+
+-- Beispielinhalt:
+-- Phase                 | Farbe
+-- Service Design        | Orange
+-- Service Operation     | Grün
+-- Service Transition    | Gelb
+-- Service Strategie     | Blau
+-- Continual Improvement | Grau
+
+-- 4. KPI-Berechnungen (Measures):
+
+KPI_Anzahl_Kritisch = 
+CALCULATE(COUNTROWS(tbl_ITIL_Practice_Status), tbl_ITIL_Practice_Status[Reifegrad_Num] = 0)
+
+KPI_Ø_Reifegrad = 
+AVERAGE(tbl_ITIL_Practice_Status[Reifegrad_Num])
+
+KPI_Aktive_Hochrelevante = 
+CALCULATE(
+    COUNTROWS(tbl_ITIL_Practice_Status),
+    tbl_ITIL_Practice_Status[Nutzung] = "aktiv",
+    tbl_ITIL_Practice_Status[Prio] IN {"A", "B"}
+)
+
+-- 5. Beziehungen im Modell (Modellierungsansicht):
+-- tbl_ITIL_Practice_Status[ITIL Practice] 1:* tbl_ITIL_Bebauungsplan_Map[Practice]
+-- tbl_ITIL_Practice_Status[Phase]         *:* tbl_Phase_Legende[Phase]
+
+-- 6. Visuals:
+-- Matrix: ITIL Practice × Phase (mit Stufen und Ampel)
+-- Kartenvisuals: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
+-- Filter: Nutzung, Prio, Lifecycle, Implementierungsphase
+-- Optional: Synoptic Panel oder custom Matrix für Bebauungsplan-Ansicht
+-- https://fhhportal.ondataport.de/websites/p_013/078/Intern/Lists/IT3%20Rollen%20Canvas/AllItems.aspx?viewid=328f32f5%2D126a%2D4a4a%2Dbdf6%2D027384f8cf06
