@@ -136,3 +136,27 @@ Noch NICHT installiert, aber notwendig für SharePoint-Export mit Power BI:
 | `msal`, `PyJWT`, `cryptography`, `cffi`, `pycparser` | Authentifizierung         | 🟡 Nur bei Token-Login notwendig    |
 | `six`                                                | Kompatibilitätsbibliothek | 🟡 Für `python-dateutil`            |
 
+####################### Datei blockiert ############################################
+McAfee Web Gateway hat die Datei blockiert, da der erkannte Medientyp (siehe unten) nicht zulässig ist.
+URL: https://raw.githubusercontent.com/Dofp79/ITIL-Bebauungsplan/refs/heads/main/python37-pakete/.whl/pytz-2025.2-py2.py3-none-any.whl?token=GHSAT0AAAAAADDONKKKCXUDGBCLTLLINT3W2A5U4LA
+Dateiname: pytz/zoneinfo/CET
+Medientyp (erkannt): application/x-timezone
+Medientyp (aus Dateiname):
+
+McAfee Web Gateway hat die Datei blockiert, da der erkannte Medientyp (siehe unten) nicht zulässig ist.
+URL: https://raw.githubusercontent.com/Dofp79/ITIL-Bebauungsplan/refs/heads/main/python37-pakete/.whl/numpy-1.21.6-cp37-cp37m-win32.whl?token=GHSAT0AAAAAADDONKKKQIMQOPRZVWKDXCR62A5VGBQ
+Dateiname: numpy/.libs/libopenblas.VTYUM5MXKVFE4PZZER3L7PNO6YB4XFF3.gfortran-win32.dll
+Medientyp (erkannt): application/executable
+Medientyp (aus Dateiname):
+
+
+C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user Office365_REST_Python_Client-2.6.1-py3-none-any.whl
+Processing c:\users\pp021887\python-pakete\office365_rest_python_client-2.6.1-py3-none-any.whl
+Collecting msal (from Office365-REST-Python-Client==2.6.1)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03E1E7F0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/msal/
+  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03E1EAD0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/msal/
+  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03E1EBB0>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/msal/
+  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03E1EC90>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/msal/
+  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x03E1ED70>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/msal/
+  Could not find a version that satisfies the requirement msal (from Office365-REST-Python-Client==2.6.1) (from versions: )
+No matching distribution found for msal (from Office365-REST-Python-Client==2.6.1)
