@@ -1,0 +1,15 @@
+Modulare Pipeline-Struktur mit deinen Bibliotheken
+1. Datenextraktion (SharePoint, REST-APIs, Datenbanken)
+| Zweck                        | Bibliotheken                                                    | Kommentar                                                        |
+| ---------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
+| SharePoint-Authentifizierung | `Office365-REST-Python-Client`, `msal`, `PyJWT`, `cryptography` | Für modernen OAuth2-Zugang zu SharePoint Online                  |
+| REST-API-Zugriff             | `requests`, `PyJWT`                                             | Für APIs anderer Systeme (z. B. SAP REST, interne Microservices) |
+| Datenbankverbindung          | `pyodbc`, `sqlalchemy`                                          | Zugriff auf MS SQL, Oracle, etc. (optional bei DB-Zugriff)       |
+| Zeitsteuerung                | `schedule`, `apscheduler`                                       | Für automatisierte, zyklische Abrufe (z. B. täglich 6 Uhr)       |
+
+2. Datenvorverarbeitung & Modellierung
+| Zweck                   | Bibliotheken                  | Kommentar                                                   |
+| ----------------------- | ----------------------------- | ----------------------------------------------------------- |
+| CSV/Excel-Verarbeitung  | `pandas`, `openpyxl`, `numpy` | Zentrale Werkzeuge zur Datenaufbereitung                    |
+| Zeitdaten analysieren   | `python-dateutil`, `pytz`     | Für konsistente Zeitstempelverarbeitung & Timezone-Handling |
+| Web Scraping (optional) | `lxml`, `beautifulsoup4`      | Falls Daten aus HTML-Quellen extrahiert werden müssen       |
