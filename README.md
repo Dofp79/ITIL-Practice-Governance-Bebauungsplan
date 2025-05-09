@@ -8,6 +8,7 @@ Darstellung der IT-Bebauungsplanung nach dem Prinzip des Service Blueprint, mit 
 •	Einbindung aller IT-Disziplinen in die Service-Erstellung, -Änderung und -Erbringung
 ________________________________________
 Dashboard-Komponenten (konkret & abgestimmt auf deine Daten)
+
 1. ✅ Blueprint-Visualisierung nach Service Blueprint Logik
 •	Kategorien aus Spalte Blueprint:
 o	Self Service Aktionen → Self Service
@@ -16,20 +17,24 @@ o	Back Desk Aktionen → interne Servicebereitstellung
 •	Umsetzung als Swimlane oder Layer-Grafik
 o	Zeilen: Blueprint-Kategorie
 o	Elemente: ITIL Practices mit Symbolen (Farben = Reifegrad, Größe = Prio)
+
 2. 🟡 Ampel-Matrix der ITIL Practices (Matrix.png)
 •	Darstellung der ITIL Practices entlang der ITIL V3 Lifecycle-Phasen
 •	Farbliche Markierung des Reifegrads (Rot, Gelb, Grün) je Phase
 •	Berechnung eines Gesamtwerts pro Practice zur Reifeanalyse
+
 3. 🎛️ Filterfelder (aus Filter.png)
 •	Nutzung: Aktiv, Geplant, Ungeplant (aus Spalte Dataport Nutzung)
 •	Reifegrad-Ampel: automatisch berechnet aus Reifegrad (1–3 → Rot/Gelb/Grün)
 •	Prio: A–D (aus Spalte Prio)
 •	Phase: gemäß Einordnung ITIL Lifecycle Phase
+
 4. 📊 Bubble Chart: Optimierungspotenzial
 •	X-Achse: Prio (A bis D)
 •	Y-Achse: Reifegrad (numerisch übersetzt)
 •	Größe der Blase: Anzahl Subprozesse oder Systemschnittstellen
 •	Hervorragend zur Identifikation von Quick Wins
+
 5. 📄 Service Experience Table
 •	Spalten: ITIL Practice | Blueprint-Kategorie | Reifegrad | Nutzung | Prio | Phase
 •	Verlinkung zur Rollenverantwortung über „Pfad“-Spalte
