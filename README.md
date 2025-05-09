@@ -1,10 +1,13 @@
 Ziel des Power BI Dashboards
 Darstellung der IT-Bebauungsplanung nach dem Prinzip des Service Blueprint, mit Fokus auf:
+
 •	Differenzierung zwischen Kundenerlebnis (Front Desk & Self Service) und Mitarbeitererlebnis (Back Desk)
+
 •	Transparenz über Reifegrad, Nutzung und Priorisierung der ITIL Practices
+
 •	Einbindung aller IT-Disziplinen in die Service-Erstellung, -Änderung und -Erbringung
 ________________________________________
-🧱 Dashboard-Komponenten (konkret & abgestimmt auf deine Daten)
+Dashboard-Komponenten (konkret & abgestimmt auf deine Daten)
 1. ✅ Blueprint-Visualisierung nach Service Blueprint Logik
 •	Kategorien aus Spalte Blueprint:
 o	Self Service Aktionen → Self Service
