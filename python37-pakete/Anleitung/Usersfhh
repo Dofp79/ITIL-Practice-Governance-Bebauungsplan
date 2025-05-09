@@ -199,3 +199,36 @@ Ich danke Ihnen für die Prüfung dieses Antrags und stehe für Rückfragen jede
 
 Mit freundlichen Grüßen
 Doniman Francisco Peña Parra
+
+
+
+Betreff: Python-Bibliotheken für Power BI + SharePoint: Kompatibilität und Optionen im KWK
+
+Hallo Jörg,
+
+ich beschäftige mich aktuell mit einem Python-gestützten Ansatz, um regelmäßig Daten aus bestimmten SharePoint-Listen zu extrahieren und in Power BI Desktop automatisiert zu laden (CSV-Format). Damit möchte ich manuelle Exporte ersetzen und die Aktualität in operativen Dashboards verbessern.
+
+Die technische Umsetzung erfolgt lokal – ohne externe Dienste – mit einem einfachen Python-Skript. Eine Verbindung zu SharePoint habe ich bewusst noch nicht eingerichtet, da ich zunächst sicherstellen möchte, dass alle benötigten Bibliotheken überhaupt in der vorhandenen Umgebung lauffähig sind.
+
+Auf dem VPN-System ist Python 3.7.3 aus dem KWK installiert. Dabei stoße ich allerdings auf Kompatibilitätsprobleme mit aktuellen Versionen wichtiger Bibliotheken wie pandas, requests, Office365-REST-Python-Client, msal usw.
+Viele dieser Pakete unterstützen 3.7 entweder gar nicht mehr oder nur eingeschränkt. In der Praxis führt das zu Installationsfehlern und Einschränkungen in der Funktionalität.
+
+Aus meiner Sicht wäre Python 3.10 oder neuer deutlich geeigneter, da:
+
+viele Pakete ab 3.10 aktiv gepflegt und empfohlen werden,
+
+es dort keine Konflikte mit aktuellen Versionen gibt,
+
+und Performance und Stabilität (z. B. TLS-Unterstützung) spürbar verbessert wurden.
+
+Daher meine Frage an dich als Power BI-Fachverantwortlichen:
+Gibt es aus deiner Sicht im Rahmen des KWK eine Möglichkeit,
+
+Python in einer neueren Version (z. B. 3.10.x) bereitzustellen
+
+oder eine lokal definierte, isolierte Python-Umgebung zu nutzen, in der ich gezielt Pakete installieren und verwalten kann?
+
+Mir ist bewusst, dass es Alternativen gibt – aber mir geht es darum, mit vorhandenen Werkzeugen eine möglichst wartbare, saubere Lösung aufzusetzen. Wenn du eine andere Empfehlung hast, freue ich mich auch über deine Einschätzung.
+
+Vielen Dank und viele Grüße
+Doniman Francisco Peña Parra
