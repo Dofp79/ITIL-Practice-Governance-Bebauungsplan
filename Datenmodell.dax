@@ -1,12 +1,12 @@
 -- ===========================================
--- Power BI Datenmodell: ITIL Practice Governance & Bebauungsplan
+-- Power BI Datenmodell: ITIL Practice Governance & Bebauungsplan (mit Python/SharePoint-Anbindung)
 -- ===========================================
 
--- 1. Tabelle: tbl_ITIL_Practice_Status
--- Quelle: CSV / Excel aus Practice-Katalog
--- Enthält zentrale Informationen zu Reifegrad, Nutzung, Phase usw.
+-- 1. Tabelle: ITIL_Practice_Catalogue_07052025
+-- Quelle: SharePoint-Export via Python (z. B. mit pandas + Office365 REST API)
+-- Enthält zentrale Informationen zu Reifegrad, Nutzung, Phase, Blueprint, Prio etc.
 
--- Beispielhafte DAX-Spalten (berechnete Felder):
+-- Berechnete Spalte: Ampel-Reifegrad (farbliche Codierung)
 Ampel_Reifegrad = 
 SWITCH(TRUE(),
     [Reifegrad_Num] = 0, "Kritisch",
@@ -16,45 +16,59 @@ SWITCH(TRUE(),
 )
 
 -- 2. Tabelle: tbl_ITIL_Bebauungsplan_Map
--- Mapping-Tabelle für Bebauungsplan-Zuordnung
--- Enthält Practice-Namen, Bereich (Frontdesk, Backdesk etc.), Phase, Stufe (1–3)
+-- Mapping von Practices zur Blueprint-Kategorie (Front Desk / Back Desk / Self Service)
+-- Spalten: Practice | Bereich | Phase | Stufe | Blueprint_Kategorie
 
--- Beispielspalten:
--- Practice | Bereich | Phase | Stufe
+-- 3. Tabelle: tbl_Phase_Legende
+-- Für strukturierte Filter und Farben
+-- Spalten: Phase | Farbe
 
--- 3. Dimensionstabelle: tbl_Phase_Legende
--- Für strukturierte Filter und Gruppierungen
+-- 4. Tabelle: tbl_Practice_Kategorie (optional für ITIL 4)
+-- General Management / Service Management / Technical Management
+-- Spalten: Practice_Kategorie | Beschreibung
 
--- Beispielinhalt:
--- Phase                 | Farbe
--- Service Design        | Orange
--- Service Operation     | Grün
--- Service Transition    | Gelb
--- Service Strategie     | Blau
--- Continual Improvement | Grau
+-- 5. Beziehungen:
+-- ITIL_Practice_Catalogue_07052025[ITIL Practice] 1:* tbl_ITIL_Bebauungsplan_Map[Practice]
+-- ITIL_Practice_Catalogue_07052025[Phase]         *:* tbl_Phase_Legende[Phase]
+-- ITIL_Practice_Catalogue_07052025[Kategorie]     *:* tbl_Practice_Kategorie[Practice_Kategorie]
 
--- 4. KPI-Berechnungen (Measures):
+-- 6. Measures / KPIs:
 
 KPI_Anzahl_Kritisch = 
-CALCULATE(COUNTROWS(tbl_ITIL_Practice_Status), tbl_ITIL_Practice_Status[Reifegrad_Num] = 0)
+CALCULATE(
+    COUNTROWS(ITIL_Practice_Catalogue_07052025), 
+    ITIL_Practice_Catalogue_07052025[Reifegrad_Num] = 0
+)
 
 KPI_Ø_Reifegrad = 
-AVERAGE(tbl_ITIL_Practice_Status[Reifegrad_Num])
+AVERAGE(ITIL_Practice_Catalogue_07052025[Reifegrad_Num])
 
 KPI_Aktive_Hochrelevante = 
 CALCULATE(
-    COUNTROWS(tbl_ITIL_Practice_Status),
-    tbl_ITIL_Practice_Status[Nutzung] = "aktiv",
-    tbl_ITIL_Practice_Status[Prio] IN {"A", "B"}
+    COUNTROWS(ITIL_Practice_Catalogue_07052025),
+    ITIL_Practice_Catalogue_07052025[Nutzung] = "aktiv",
+    ITIL_Practice_Catalogue_07052025[Prio] IN {"A", "B"}
 )
 
--- 5. Beziehungen im Modell (Modellierungsansicht):
--- tbl_ITIL_Practice_Status[ITIL Practice] 1:* tbl_ITIL_Bebauungsplan_Map[Practice]
--- tbl_ITIL_Practice_Status[Phase]         *:* tbl_Phase_Legende[Phase]
+KPI_Backdesk_Anteil = 
+DIVIDE(
+    CALCULATE(
+        COUNTROWS(tbl_ITIL_Bebauungsplan_Map), 
+        tbl_ITIL_Bebauungsplan_Map[Bereich] = "Back Desk"
+    ),
+    COUNTROWS(tbl_ITIL_Bebauungsplan_Map)
+)
 
--- 6. Visuals:
--- Matrix: ITIL Practice × Phase (mit Stufen und Ampel)
--- Kartenvisuals: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
--- Filter: Nutzung, Prio, Lifecycle, Implementierungsphase
--- Optional: Synoptic Panel oder custom Matrix für Bebauungsplan-Ansicht
--- https://fhhportal.ondataport.de/websites/p_013/078/Intern/Lists/IT3%20Rollen%20Canvas/AllItems.aspx?viewid=328f32f5%2D126a%2D4a4a%2Dbdf6%2D027384f8cf06
+KPI_Ungeplant_Kritisch = 
+CALCULATE(
+    COUNTROWS(ITIL_Practice_Catalogue_07052025),
+    ITIL_Practice_Catalogue_07052025[Nutzung] = "ungeplant",
+    ITIL_Practice_Catalogue_07052025[Reifegrad_Num] = 0
+)
+
+-- 7. Visuals:
+-- Matrix: ITIL Practice × Phase (Ampel-Farbcodierung)
+-- KPI-Karten: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
+-- Filter: Nutzung, Prio, Phase, Blueprint_Kategorie, Practice_Kategorie
+-- Synoptic Panel: Blueprint-Darstellung (Frontstage vs. Backstage)
+-- Optional: Einbindung dynamischer Refresh über Python-Skript (SharePoint → Power BI)
