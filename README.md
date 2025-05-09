@@ -7,7 +7,7 @@ ________________________________________
 🧱 Dashboard-Komponenten (konkret & abgestimmt auf deine Daten)
 1. ✅ Blueprint-Visualisierung nach Service Blueprint Logik
 •	Kategorien aus Spalte Blueprint:
-o	Self Service Aktionen → Self Service
+o	Self Service Aktionen → Self Service 
 o	Front Desk Aktionen → direkte Kundenschnittstellen
 o	Back Desk Aktionen → interne Servicebereitstellung
 •	Umsetzung als Swimlane oder Layer-Grafik
