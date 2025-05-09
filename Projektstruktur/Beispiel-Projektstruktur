@@ -1,0 +1,22 @@
+project/
+│
+├── config/
+│   └── sharepoint_auth.json
+│
+├── data/
+│   ├── raw/                # Direkt von APIs oder DB geladen
+│   └── modeled/            # Für Power BI aufbereitete CSVs
+│
+├── extract/
+│   └── sharepoint_loader.py        # Office365-Client + msal
+│   └── rest_api_fetcher.py         # requests + PyJWT
+│   └── db_connector.py             # sqlalchemy + pyodbc
+│
+├── transform/
+│   └── clean_and_join.py           # pandas, numpy
+│   └── time_handling.py            # pytz, dateutil
+│
+├── automate/
+│   └── job_scheduler.py            # schedule/apscheduler
+│
+└── main.py                         # Startet Pipeline
