@@ -32,6 +32,7 @@ Backstage (unsichtbare IT-Praktiken): z. B. Incident Management, Problem Manag
 Supporting Processes & Systems: z. B. CMDB, Monitoring-Systeme, Automatisierungsplattformen
 
   ▶ Umsetzung: Matrix mit Shape Map / Custom Visual „Swimlane“ oder gestapelten Balken
+  
 
 2. ITIL Practices Mapping
 Tabelle oder Matrix mit Filteroption:
@@ -46,6 +47,7 @@ Zeilen: Services, betroffene Systeme
 Balkendiagramm: Anzahl der Prozesse, die direkt zur Customer Experience beitragen vs. indirekte, unterstützende Prozesse.
 
   ▶ Umsetzung: gestapelte Balken nach „Sichtbarkeit“
+  
 
 4. Heatmap: Prozessreife vs. Service-Impact
 Ein Koordinatensystem, das zeigt:
@@ -57,6 +59,7 @@ Y-Achse: Reifegrad der ITIL-Practice
 Größe: Anzahl betroffener Services
 
   ▶ Umsetzung: Streudiagramm oder Bubble Chart
+  
 
 🛠 Datenquellen & Modellierungsvorschläge
 Excel/SharePoint-Listen mit Zuordnung: [ITIL Practice] – [Service] – [System] – [Verantwortung] – [Touchpoint]
