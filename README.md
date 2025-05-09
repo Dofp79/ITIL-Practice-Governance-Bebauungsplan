@@ -47,6 +47,9 @@ Da du dich noch an ITIL V3 Lifecycle-Phasen orientierst, empfehle ich:
 •	Spalte Zuordnung ITIL 4 Kategorie ist bereits vorhanden und kann genutzt werden
 ________________________________________
 Visualer Lesevorschlag für Stakeholder
+
 •	Managementsicht (Front Desk / Self Service): Fokus auf direkte Customer Touchpoints und deren Reife
+
 •	Operative Sicht (Back Desk): Identifikation von Engpässen, kritischen Bereichen und nicht aktivierten Practices
+
 •	Governance-Sicht: Verbindung zu Rollenverantwortung (z. B. „ITIL Core Team“) und Lenkungskreisen
