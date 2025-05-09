@@ -7,7 +7,7 @@ ________________________________________
 🧱 Dashboard-Komponenten (konkret & abgestimmt auf deine Daten)
 1. ✅ Blueprint-Visualisierung nach Service Blueprint Logik
 •	Kategorien aus Spalte Blueprint:
-o	Self Service Aktionen → Self Service 
+o	Self Service Aktionen → Self Service
 o	Front Desk Aktionen → direkte Kundenschnittstellen
 o	Back Desk Aktionen → interne Servicebereitstellung
 •	Umsetzung als Swimlane oder Layer-Grafik
@@ -41,4 +41,3 @@ Visualer Lesevorschlag für Stakeholder
 •	Managementsicht (Front Desk / Self Service): Fokus auf direkte Customer Touchpoints und deren Reife
 •	Operative Sicht (Back Desk): Identifikation von Engpässen, kritischen Bereichen und nicht aktivierten Practices
 •	Governance-Sicht: Verbindung zu Rollenverantwortung (z. B. „ITIL Core Team“) und Lenkungskreisen
-
