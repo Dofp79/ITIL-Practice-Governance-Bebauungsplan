@@ -122,4 +122,17 @@ pip                19.0.3
 setuptools         40.8.0
 typing-extensions  4.7.1
 urllib3            2.0.7
+===============================================================================================================================================
+
+Noch NICHT installiert, aber notwendig für SharePoint-Export mit Power BI:
+| Bibliothek                                           | Benötigt für              | Kommentar                           |
+| ---------------------------------------------------- | ------------------------- | ----------------------------------- |
+| `pandas`                                             | Datenverarbeitung         | 🚨 Unbedingt erforderlich           |
+| `numpy`                                              | Voraussetzung für pandas  | 🚨 Muss vor pandas installiert sein |
+| `Office365-REST-Python-Client`                       | Zugriff auf SharePoint    | 🚨 Zentrale Komponente              |
+| `requests`                                           | HTTP-Anfragen             | 🚨 Wird intern von vielen genutzt   |
+| `python-dateutil`                                    | Datumsauswertung          | 🟡 Ergänzend zu `pandas`            |
+| `pytz`                                               | Zeitzonenmanagement       | 🟡 Optional, aber empfohlen         |
+| `msal`, `PyJWT`, `cryptography`, `cffi`, `pycparser` | Authentifizierung         | 🟡 Nur bei Token-Login notwendig    |
+| `six`                                                | Kompatibilitätsbibliothek | 🟡 Für `python-dateutil`            |
 
