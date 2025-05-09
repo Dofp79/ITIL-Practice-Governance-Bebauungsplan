@@ -111,3 +111,14 @@ Collecting typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1)
   Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x04489D50>, 'Connection to pypi.org timed out. (connect timeout=15)')': /simple/typing-extensions/
   Could not find a version that satisfies the requirement typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1) (from versions: )
 No matching distribution found for typing-extensions>=4.0.0 (from Office365-REST-Python-Client==2.6.1)
+
+C:\Users\PP021887\python-pakete>python -m pip list
+Package            Version
+------------------ ---------
+certifi            2025.4.26
+charset-normalizer 2.1.1
+idna               3.10
+pip                19.0.3
+setuptools         40.8.0
+typing-extensions  4.7.1
+urllib3            2.0.7
