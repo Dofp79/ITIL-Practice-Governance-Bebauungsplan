@@ -32,11 +32,8 @@ pause
 
 REM So verwendest du es:
 REM Öffne Notepad
-
 REM Kopiere den obigen Inhalt hinein
-
 REM Speichere die Datei als:
-
 REM makefile
 REM Kopieren
 REM Bearbeiten
