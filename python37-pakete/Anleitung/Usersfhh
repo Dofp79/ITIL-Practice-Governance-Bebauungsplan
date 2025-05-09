@@ -16,6 +16,39 @@
               10 Datei(en),      2.003.580 Bytes
                2 Verzeichnis(se), 141.353.185.280 Bytes frei
 
+✅ So findest du alle installierten Python-Bibliotheken heraus
+🔹 CMD-Methode (am einfachsten)
+Öffne deine Eingabeaufforderung (CMD) und gib ein:
+
+cmd
+Kopieren
+Bearbeiten
+python -m pip list
+Oder, falls du Python über einen direkten Pfad startest:
+
+cmd
+Kopieren
+Bearbeiten
+"C:\Program Files (x86)\Python37-32\python.exe" -m pip list
+📋 Das zeigt dir alle installierten Pakete inkl. Versionen – z. B.:
+
+python-repl
+Kopieren
+Bearbeiten
+Package                    Version
+-------------------------- -------
+pandas                     1.3.5
+Office365-REST-Python-Client 2.6.1
+requests                   2.31.0
+...
+🔹 Alternative: Ausgabe in Datei speichern (für spätere Dokumentation)
+cmd
+Kopieren
+Bearbeiten
+python -m pip list > installed_packages.txt
+Damit wird die Liste als Textdatei gespeichert (z. B. im gleichen Ordner wie dein Skript), die du z. B. an mich weitergeben oder in eine Dokumentation übernehmen kannst.
+
+============================================================================================================================================
 C:\Users\PP021887\python-pakete>"C:\Program Files (x86)\Python37-32\python.exe" -m pip install --user certifi-2025.4.26-py3-none-any.whl
 Processing c:\users\pp021887\python-pakete\certifi-2025.4.26-py3-none-any.whl
 Installing collected packages: certifi
