@@ -232,3 +232,13 @@ Mir ist bewusst, dass es Alternativen gibt – aber mir geht es darum, mit vorha
 
 Vielen Dank und viele Grüße
 Doniman Francisco Peña Parra
+
+
+
+Moin,
+
+die zu installierende Python Version in 3.7.3 war als höchste nutzbare Version einer Anwendung vonnöten. Diese befindet sich gerade in Ablösung hin zu einer neueren Umgebung.
+Insofern können wir gern die Version durch eine neuere und nicht unbedingt nur der v3.10.x, sondern nach Möglichkeit einer für 2025 beziehbaren, stabilen Version ersetzen. Bsplw. die 3.13.x aus 02-2025?
+
+Wenn gerade entwickelt wird, können wir gern die zukünftige Version auf dem Client der Wahl installieren und sofern negative Auffälligkeiten auftreten, diese vor dem Paketierungsauftrag an Dataport berücksichtigen.
+
