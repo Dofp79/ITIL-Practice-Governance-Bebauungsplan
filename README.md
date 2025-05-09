@@ -41,9 +41,10 @@ o	Elemente: ITIL Practices mit Symbolen (Farben = Reifegrad, Größe = Prio)
 •	Verlinkung zur Rollenverantwortung über „Pfad“-Spalte
 •	Filterbar nach Sichtweise (z. B. nur Front Desk anzeigen)
 ________________________________________
-Integration aktueller ITIL 4 Struktur (optional)
-Da du dich noch an ITIL V3 Lifecycle-Phasen orientierst, empfehle ich:
+Integration aktueller ITIL 4 Struktur 
+
 •	Mapping zu ITIL 4 Practice Domains (z. B. „Service Management“, „General Management“)
+
 •	Spalte Zuordnung ITIL 4 Kategorie ist bereits vorhanden und kann genutzt werden
 ________________________________________
 Visualer Lesevorschlag für Stakeholder
