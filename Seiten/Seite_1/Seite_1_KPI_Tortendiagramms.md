@@ -17,8 +17,17 @@ Die Maßzahl sollte den strategischen Steuerungsfokus widerspiegeln. Übliche un
 In deinem Fall bedeutet SUM(Reihenfolge) eine gewichtete Sicht auf Prioritäten, basierend auf ihrer Einordnungsrelevanz in der Umsetzung.
 
 Allgemeine Interpretation – worauf achten?
-Dominanz prüfen
+1.	Dominanz prüfen
 Gibt es einen dominanten Bereich? Das zeigt, wo Ressourcen gebunden sind oder wo Fokus liegt.
+2.	Ausgewogenheit vs. Ungleichgewicht
+Ideal ist ein balancierter Anteil je Prio (wenn kein klarer Schwerpunkt gesetzt ist).
+3.	Abweichungen vom Zielbild
+Ein hoher Anteil an „D – Unterstützend“ bei großem Aufwand könnte auf Ineffizienz hinweisen.
+4.	Tendenzen für Managemententscheidungen
+Die Grafik dient oft als Einstieg für Fragen wie:
+„Sind unsere Prioritäten noch aktuell?“
+„Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
+
 
 Ausgewogenheit vs. Ungleichgewicht
 Ideal ist ein balancierter Anteil je Prio (wenn kein klarer Schwerpunkt gesetzt ist).
