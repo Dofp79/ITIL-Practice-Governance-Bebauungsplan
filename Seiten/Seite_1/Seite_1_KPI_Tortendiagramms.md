@@ -29,12 +29,6 @@ Die Grafik dient oft als Einstieg für Fragen wie:
 „Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
 
 
-Ausgewogenheit vs. Ungleichgewicht
-Ideal ist ein balancierter Anteil je Prio (wenn kein klarer Schwerpunkt gesetzt ist).
-
-Abweichungen vom Zielbild
-Ein hoher Anteil an „D – Unterstützend“ bei großem Aufwand könnte auf Ineffizienz hinweisen.
-
 Tendenzen für Managemententscheidungen
 Die Grafik dient oft als Einstieg für Fragen wie:
 „Sind unsere Prioritäten noch aktuell?“
