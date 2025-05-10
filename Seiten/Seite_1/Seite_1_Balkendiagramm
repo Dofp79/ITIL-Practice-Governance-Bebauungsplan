@@ -1,0 +1,34 @@
+Das gezeigte Balkendiagramm „KPI_BackDesk, KPI_FrontDesk und KPI_SelfService nach Blueprint_Kategorie“ lässt sich allgemein und strategisch wie folgt interpretieren:
+________________________________________
+✅ Ziel des Diagramms
+Das Visual stellt die Anzahl von ITIL Practices je Sichtbarkeitskategorie im Service Blueprint dar – gruppiert in:
+•	🔵 Backstage (intern, nicht direkt vom Kunden gesehen)
+•	🟣 Frontstage (direkter Kundenkontakt – z. B. Service Desk)
+•	🟠 Self Service (vom Kunden selbst initiiert, automatisiert)
+________________________________________
+📐 Welche Maßzahl ist hier relevant?
+Die zugrundeliegende Measure ist in der Regel:
+DAX
+KopierenBearbeiten
+KPI_<Kategorie> = 
+CALCULATE(
+    COUNTROWS(tbl_ITIL_Bebauungsplan_Map),
+    tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie] = "<Kategorie>"
+)
+Diese zählt die Practices je Kategorie → also ein einfacher Mengenindikator für Kapazität, Sichtbarkeit und Verteilung.
+________________________________________
+🔍 Wie sollte man dieses Balkendiagramm interpretieren?
+Analyseaspekt	Interpretation / Bedeutung
+🔢 Häufigkeit pro Kategorie	Zeigt, wie viele Practices sichtbar vs. unsichtbar für den Kunden sind.
+⚖️ Balance zwischen Front / Back	Hilft zu beurteilen, ob genug Customer-Facing-Prozesse vorhanden sind.
+🛠 Self Service Anteil	Indikator für Digitalisierungsgrad / Automatisierungspotenzial.
+🔎 Backstage dominierend?	Kann auf hohe interne Komplexität oder mangelnde Kundentransparenz hindeuten.
+________________________________________
+📊 Empfehlung für generische Interpretation
+1.	Hoher Anteil Backstage → Fokus auf Stabilität und Betrieb, aber ggf. Nachholbedarf bei Kundenerlebnis.
+2.	Frontstage stark → Guter Servicekontakt, evtl. hoher Personalbedarf im IT-Service.
+3.	Self Service steigt → Fortschritt bei Automatisierung, ideal für Skalierung und Entlastung.
+4.	Ausgeglichenes Verhältnis → Maturer Service Blueprint mit gut verteilter Wertschöpfung.
+________________________________________
+🧭 Typischer Management-Kommentar (generisch)
+„Die aktuelle Sichtbarkeit der Practices entlang des Service Blueprint legt einen Schwerpunkt auf [Backstage/Frontstage/Self Service]. Dies unterstützt die Ableitung von Optimierungsmaßnahmen zur Verbesserung der Kundenerfahrung bzw. Effizienzsteigerung durch Self Services.“
