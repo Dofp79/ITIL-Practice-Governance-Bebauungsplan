@@ -14,13 +14,10 @@ Das Visual stellt die Anzahl von ITIL Practices je Sichtbarkeitskategorie im Ser
 •	 Self Service (vom Kunden selbst initiiert, automatisiert)
 ________________________________________
 Welche Maßzahl ist hier relevant?
+
 Die zugrundeliegende Measure ist in der Regel:
 
-KPI_<Kategorie> = 
-CALCULATE(
-    COUNTROWS(tbl_ITIL_Bebauungsplan_Map),
-    tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie] = "<Kategorie>"
-)
+![image](https://github.com/user-attachments/assets/2d87a126-98b1-47fe-8f3d-c7e6d1bf013c)
 
 
 Diese zählt die Practices je Kategorie → also ein einfacher Mengenindikator für Kapazität, Sichtbarkeit und Verteilung.
