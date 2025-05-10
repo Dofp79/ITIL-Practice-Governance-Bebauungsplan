@@ -15,13 +15,14 @@ Das Visual stellt die Anzahl von ITIL Practices je Sichtbarkeitskategorie im Ser
 ________________________________________
 Welche Maßzahl ist hier relevant?
 Die zugrundeliegende Measure ist in der Regel:
-DAX
-KopierenBearbeiten
+
 KPI_<Kategorie> = 
 CALCULATE(
     COUNTROWS(tbl_ITIL_Bebauungsplan_Map),
     tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie] = "<Kategorie>"
 )
+
+
 Diese zählt die Practices je Kategorie → also ein einfacher Mengenindikator für Kapazität, Sichtbarkeit und Verteilung.
 ________________________________________
 Wie sollte man dieses Balkendiagramm interpretieren?
