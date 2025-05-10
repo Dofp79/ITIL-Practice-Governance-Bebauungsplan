@@ -1,6 +1,6 @@
-ITIL Practice Governance & Bebauungsplan
+🔷 ITIL Practice Governance & Bebauungsplan 🔷
 
-⭐ Ziel des Power BI Dashboards ⭐
+ Ziel des Power BI Dashboards
 
 Darstellung der IT-Bebauungsplanung nach dem Prinzip des Service Blueprint, mit Fokus auf:
 
@@ -56,3 +56,13 @@ Visualer Lesevorschlag für Stakeholder
 •	Operative Sicht (Back Desk): Identifikation von Engpässen, kritischen Bereichen und nicht aktivierten Practices
 
 •	Governance-Sicht: Verbindung zu Rollenverantwortung (z. B. „ITIL Core Team“) und Lenkungskreisen
+
+________________________________________
+## 📫 Kontakt
+
+Fragen oder Feedback?  
+**Doniman F. Peña Parra**
+
+- 🌐 [GPT-Link zur Projektunterstützung](https://chatgpt.com/g/g-68150f83fda081919d979c8418039ee5-dashboard-design)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/dein-profil)  
+- ✉️ E-Mail: [dofp79@hotmail.com](mailto:dofp79@hotmail.com)
