@@ -16,6 +16,8 @@ COUNTROWS	Anzahl Practices je Kategorie – für einfache Verteilung
 SUM(Reihenfolge)	Visualisierung operativer Wichtigkeit / geplante Umsetzung
 AVERAGE(Reifegrad)	Bewertung der strukturellen Reife je Prio
 COUNTAX(FILTER(...), ...)	Anteile spezifischer Kombinationen, z. B. „aktiv & kritisch“
+![image](https://github.com/user-attachments/assets/1d185fa9-11d2-44a1-aa7a-d4ce641bce9c)
+
 
 In deinem Fall bedeutet SUM(Reihenfolge) eine gewichtete Sicht auf Prioritäten, basierend auf ihrer Einordnungsrelevanz in der Umsetzung.
 
