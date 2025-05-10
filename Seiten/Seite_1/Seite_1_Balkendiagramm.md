@@ -17,7 +17,8 @@ Welche Maßzahl ist hier relevant?
 
 Die zugrundeliegende Measure ist in der Regel:
 
-![image](https://github.com/user-attachments/assets/2d87a126-98b1-47fe-8f3d-c7e6d1bf013c)
+![image](https://github.com/user-attachments/assets/92c4e3ac-3c99-4866-a643-67d838281bbf)
+
 
 
 Diese zählt die Practices je Kategorie → also ein einfacher Mengenindikator für Kapazität, Sichtbarkeit und Verteilung.
