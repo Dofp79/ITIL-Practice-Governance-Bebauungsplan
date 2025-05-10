@@ -11,11 +11,6 @@ Ein Tortendiagramm stellt Anteile am Ganzen dar und eignet sich ideal, um die Ve
 Welche Maßzahl (Measure) sollte man wählen?
 Die Maßzahl sollte den strategischen Steuerungsfokus widerspiegeln. Übliche und bewährte KPIs:
 
-Maßzahl (Measure)	Bedeutung / Einsatzfall
-COUNTROWS	Anzahl Practices je Kategorie – für einfache Verteilung
-SUM(Reihenfolge)	Visualisierung operativer Wichtigkeit / geplante Umsetzung
-AVERAGE(Reifegrad)	Bewertung der strukturellen Reife je Prio
-COUNTAX(FILTER(...), ...)	Anteile spezifischer Kombinationen, z. B. „aktiv & kritisch“
 ![image](https://github.com/user-attachments/assets/1d185fa9-11d2-44a1-aa7a-d4ce641bce9c)
 
 
