@@ -64,5 +64,5 @@ Fragen oder Feedback?
 **Doniman F. Peña Parra**
 
 - 🌐 [GPT-Link zur Projektunterstützung](https://chatgpt.com/g/g-68150f83fda081919d979c8418039ee5-dashboard-design)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/dein-profil)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/doniman-francisco-pe%C3%B1a-parra-609263232/)  
 - ✉️ E-Mail: [dofp79@hotmail.com](mailto:dofp79@hotmail.com)
