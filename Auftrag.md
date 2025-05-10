@@ -16,9 +16,9 @@ Mir ist nur wichtig, dass sichtbar, was ist direkte Kundenerfahrung (Front Desk 
 
 Wesentlich für die IT-Services (Erstellung, Änderung, Erbringung/Bereitstellung) ist, dass alle IT-Abteilung in ihren Disziplinen beteiligt sind.
 
-![image](https://github.com/user-attachments/assets/75ace6e8-1b59-438a-bb74-b55bccd9f514)
 
 ✅ Erreichte Punkte mit Seite 1 des Dashboards
 
-![image](https://github.com/user-attachments/assets/3086ff71-535a-4d2a-ba6f-b308b3a5a9b3)
+![image](https://github.com/user-attachments/assets/c7816e46-d47a-48a4-9cc6-fc1ff24c2ddb)
+
 
