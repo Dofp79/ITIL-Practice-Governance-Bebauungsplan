@@ -15,3 +15,9 @@ Du kannst auch gerne die Rubriken nach ITIL 4 nutzen (müssten noch in die Tabel
 Mir ist nur wichtig, dass sichtbar, was ist direkte Kundenerfahrung (Front Desk und Self Service Aktivitäten) und was läuft im Hintergrund und ist eine Mitarbeitererfahrung.
 
 Wesentlich für die IT-Services (Erstellung, Änderung, Erbringung/Bereitstellung) ist, dass alle IT-Abteilung in ihren Disziplinen beteiligt sind.
+
+
+✅ Erreichte Punkte mit Seite 1 des Dashboards
+
+![image](https://github.com/user-attachments/assets/3086ff71-535a-4d2a-ba6f-b308b3a5a9b3)
+
