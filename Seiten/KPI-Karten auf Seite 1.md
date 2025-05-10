@@ -9,7 +9,7 @@ Anzahl Kritisch = 10
 •	Interpretation: Es gibt 10 Practices, die als kritisch einzustufen sind, da sie noch keine geregelte Implementierung haben.
 •	Handlungsbedarf: Sofortige Prüfung und Risikobewertung dieser Practices. Kandidaten für Pilotierung oder Management Attention.
 ________________________________________
-🟡 Ø Reifegrad = 1,12
+Ø Reifegrad = 1,12
 •	Definition: Durchschnittlicher Reifegrad aller Practices (basierend auf 1. Stelle des Reifegrad-Werts).
 •	Interpretation: Der Mittelwert liegt im Bereich „1 – Wiederholbar“. Es besteht noch signifikanter Verbesserungsbedarf.
 •	Handlungsbedarf: Ziel sollte ein Durchschnitt von ≥ 2 sein. Verbesserungsinitiativen, z. B. über Continual Improvement oder Coaching, erforderlich.
