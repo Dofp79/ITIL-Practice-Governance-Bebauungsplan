@@ -1,5 +1,7 @@
 
 ![image](https://github.com/user-attachments/assets/34d1ef94-8a32-41c4-bdaa-547dfab37327)
+
+
 Hier ist die Liste der KPI-Karten auf Seite 1 mit jeweiliger Interpretation und Bedeutung für die ITIL Practice Governance & Bebauungsplanung:
 ________________________________________
 Anzahl Kritisch = 10
