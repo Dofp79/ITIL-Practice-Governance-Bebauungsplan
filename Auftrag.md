@@ -23,7 +23,11 @@ ________________________________________
 
 ________________________________________
 📌 Zusammenfassung
-Seite 1 erfüllt den Großteil der Kernanforderungen des Auftrags bereits: Visualisierung, Klassifizierung, und Reifegrad-Monitoring sind enthalten. Die Sichtbarkeit nach Blueprint ist zentral enthalten – gut umgesetzt. Für Vervollständigung wären folgende Ergänzungen hilfreich:
+
+Seite 1 erfüllt den Großteil der Kernanforderungen des Auftrags bereits: 
+Visualisierung, Klassifizierung, und Reifegrad-Monitoring sind enthalten. 
+Die Sichtbarkeit nach Blueprint ist zentral enthalten – gut umgesetzt. 
+Für Vervollständigung wären folgende Ergänzungen hilfreich:
 1.	ITIL 4 Practice Kategorien als Filter
 2.	Darstellung der IT-Rollen oder Abteilungen (Disziplinen)
 3.	Live-Aktualisierung der Quelle via SharePoint prüfen und ggf. dokumentieren
