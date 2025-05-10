@@ -35,8 +35,6 @@ Die Grafik dient oft als Einstieg für Fragen wie:
 „Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
 
 Empfehlungen für Interpretation im Managementkontext
-Visualer Hinweis	Was es bedeuten kann
-Eine Prio dominiert (z. B. B > 50 %)	Operative Dringlichkeit – „jetzt handeln“
-Viele A & C, wenig B	Strategische Pipeline noch nicht aktiviert
-Hoher Anteil D	Unterstützung statt Wertschöpfung – ggf. Automatisierung
-Gleichverteilung	Gleichbehandlung aller Bereiche – gut oder auch zu diffus
+
+![image](https://github.com/user-attachments/assets/a882aee5-9256-40f6-abfa-7a43df0c4608)
+
