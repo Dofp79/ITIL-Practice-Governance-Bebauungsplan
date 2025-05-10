@@ -4,12 +4,12 @@ Seite_1_KPI_Tortendiagramms.md
 ![image](https://github.com/user-attachments/assets/dcb4b387-14ca-4c96-9905-aeae1d951f63)
 
 
-
+________________________________________
 Zweck eines solchen KPI-Tortendiagramms
 
 Ein Tortendiagramm stellt Anteile am Ganzen dar und eignet sich ideal, um die Verteilung von Prioritäten, Reifegraden, Kategorien oder Ressourcenzuordnungen sichtbar zu machen. Ziel ist es, Muster und Schwerpunkte schnell zu erfassen.
 
-
+________________________________________
 Welche Maßzahl (Measure) sollte man wählen?
 Die Maßzahl sollte den strategischen Steuerungsfokus widerspiegeln. Übliche und bewährte KPIs:
 
@@ -17,7 +17,7 @@ Die Maßzahl sollte den strategischen Steuerungsfokus widerspiegeln. Übliche un
 
 
 In deinem Fall bedeutet SUM(Reihenfolge) eine gewichtete Sicht auf Prioritäten, basierend auf ihrer Einordnungsrelevanz in der Umsetzung.
-
+________________________________________
 Allgemeine Interpretation – worauf achten?
 1.	Dominanz prüfen
 Gibt es einen dominanten Bereich? Das zeigt, wo Ressourcen gebunden sind oder wo Fokus liegt.
@@ -30,12 +30,13 @@ Die Grafik dient oft als Einstieg für Fragen wie:
 „Sind unsere Prioritäten noch aktuell?“
 „Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
 
-
+________________________________________
 Tendenzen für Managemententscheidungen
 Die Grafik dient oft als Einstieg für Fragen wie:
 „Sind unsere Prioritäten noch aktuell?“
 „Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
 
+________________________________________
 Empfehlungen für Interpretation im Managementkontext
 
 ![image](https://github.com/user-attachments/assets/a882aee5-9256-40f6-abfa-7a43df0c4608)
