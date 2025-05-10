@@ -353,7 +353,12 @@ AVERAGEX(
 
 KPI_Aktive_Hochrelevante = 
 CALCULATE(
-    COUNTROWS(ITIL_Practice_Catalogue_07052025)
+    COUNTROWS(ITIL_Practice_Catalogue_07052025),
+    FILTER(
+        ITIL_Practice_Catalogue_07052025,
+        ITIL_Practice_Catalogue_07052025[Nutzung] = "aktiv"
+        && ITIL_Practice_Catalogue_07052025[Prio] IN { "A", "B" }
+    )
 )
 //
 // Dokumentation
@@ -367,7 +372,7 @@ CALCULATE(
 //   - Unterstützt Steuerung und gezielte Investitionslenkung
 // Prinzipien:
 //   - Fokussiere dich auf den Wert
-//   - Optimiere und automatisiere,
+//   - Optimiere und automatisiere
 //
 
 KPI_Backdesk_Anteil = 
