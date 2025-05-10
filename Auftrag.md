@@ -22,7 +22,7 @@ ________________________________________
 ![image](https://github.com/user-attachments/assets/c7816e46-d47a-48a4-9cc6-fc1ff24c2ddb)
 
 ________________________________________
-📌 Zusammenfassung
+Zusammenfassung
 
 Seite 1 erfüllt den Großteil der Kernanforderungen des Auftrags bereits: 
 Visualisierung, Klassifizierung, und Reifegrad-Monitoring sind enthalten. 
