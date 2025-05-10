@@ -34,5 +34,7 @@ Empfehlung für generische Interpretation
 3.	Self Service steigt → Fortschritt bei Automatisierung, ideal für Skalierung und Entlastung.
 4.	Ausgeglichenes Verhältnis → Maturer Service Blueprint mit gut verteilter Wertschöpfung.
 ________________________________________
-🧭 Typischer Management-Kommentar (generisch)
-„Die aktuelle Sichtbarkeit der Practices entlang des Service Blueprint legt einen Schwerpunkt auf [Backstage/Frontstage/Self Service]. Dies unterstützt die Ableitung von Optimierungsmaßnahmen zur Verbesserung der Kundenerfahrung bzw. Effizienzsteigerung durch Self Services.“
+Typischer Management-Kommentar (generisch)
+
+„Die aktuelle Sichtbarkeit der Practices entlang des Service Blueprint legt einen Schwerpunkt auf [Backstage/Frontstage/Self Service]. 
+Dies unterstützt die Ableitung von Optimierungsmaßnahmen zur Verbesserung der Kundenerfahrung bzw. Effizienzsteigerung durch Self Services.“
