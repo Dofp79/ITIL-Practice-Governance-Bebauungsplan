@@ -149,6 +149,7 @@ SUMMARIZE(
 // Quelle:     tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Bereitstellung einer Tabelle zur Anzahl Practices je Blueprint-Kategorie
 // Beschreibung:
 //   - Ideal für Matrix-Visuals oder Gruppierungsanalysen
@@ -177,6 +178,7 @@ CALCULATE(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices, die der Kategorie "Service Management" zugeordnet sind
 // Beschreibung:
 //   - Nutzt die Spalte "Zuordnung ITIL 4 Kategorie" aus dem Practice-Katalog
@@ -188,6 +190,7 @@ CALCULATE(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zeigt die Anzahl der Practices je ITIL 4 Kategorie
 // Beschreibung:
 //   - Dient zur Gruppierung und Analyse nach strukturellen Kategorien
@@ -212,6 +215,7 @@ AVERAGEX(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Durchschnittlicher Reifegrad der Practices mit ITIL 4 Kategorie "Service Management"
 // Beschreibung:
 //   - Verwendet den ersten Buchstaben des Reifegrads zur Berechnung
@@ -223,6 +227,7 @@ AVERAGEX(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Durchschnittlicher Reifegrad je ITIL 4 Kategorie
 // Beschreibung:
 //   - Berechnet den Mittelwert des Reifegrads für jede Practice-Kategorie
@@ -245,6 +250,7 @@ SUMMARIZE(
 // Quelle:     tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Bereitstellung einer Tabelle zur Anzahl Practices je Blueprint-Kategorie
 // Beschreibung:
 //   - Ideal für Matrix-Visuals oder Gruppierungsanalysen
@@ -265,6 +271,7 @@ CALCULATE(
 // Tabelle:    tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices mit Sichtbarkeit "Frontstage" (direkte Kundenschnittstelle)
 // Beschreibung:
 //   - Nutzt die Spalte "Blueprint_Kategorie"
@@ -283,6 +290,7 @@ CALCULATE(
 // Tabelle:    tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices mit Sichtbarkeit "Backstage" (Mitarbeitererfahrung)
 // Beschreibung:
 //   - Unterstützt Analyse interner Prozesslandschaft
@@ -302,6 +310,7 @@ CALCULATE(
 // Tabelle:    tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices mit Sichtbarkeit "Self Service"
 // Beschreibung:
 //   - Bezieht sich auf Prozesse, die Nutzende selbstständig auslösen oder abwickeln können
@@ -322,6 +331,7 @@ CALCULATE(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices mit dem Reifegrad-Stadium "0" = Kritisch
 // Beschreibung:
 //   - Nutzt die berechnete Ableitung des Reifegrads aus der ersten Zeichenposition
@@ -342,6 +352,7 @@ AVERAGEX(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Durchschnittlicher Reifegrad aller Practices (basierend auf erster Ziffer)
 // Beschreibung:
 //   - Nutzt die erste Stelle der Reifegrad-Spalte zur Berechnung eines Durchschnittswerts
@@ -366,6 +377,7 @@ CALCULATE(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle Practices, die aktiv genutzt und hoch priorisiert sind (Prio A oder B)
 // Beschreibung:
 //   - Kombination aus Nutzungsstatus = "aktiv" und Prio-Stufe A oder B
@@ -386,6 +398,7 @@ DIVIDE(
 // Tabelle:    tbl_ITIL_Bebauungsplan_Map
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Ermittelt den prozentualen Anteil der Practices im Bereich "Back Desk"
 // Beschreibung:
 //   - Nutzt den Bereichsfilter "Back Desk" und berechnet den relativen Anteil an allen Practices
@@ -405,6 +418,7 @@ CALCULATE(
 // Tabelle:    ITIL_Practice_Catalogue_07052025
 // Projekt:    ITIL Practice Governance & Bebauungsplan
 // Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
 // Zweck:      Zählt alle ungeplanten Practices mit Reifegrad 0 (kritisch)
 // Beschreibung:
 //   - Unterstützt das gezielte Aufdecken von riskanten oder unbeaufsichtigten ITIL Practices
