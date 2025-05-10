@@ -3,7 +3,7 @@
 
 
 
-✅ Zweck eines solchen KPI-Tortendiagramms
+Zweck eines solchen KPI-Tortendiagramms
 Ein Tortendiagramm stellt Anteile am Ganzen dar und eignet sich ideal, um die Verteilung von Prioritäten, Reifegraden, Kategorien oder Ressourcenzuordnungen sichtbar zu machen. Ziel ist es, Muster und Schwerpunkte schnell zu erfassen.
 
 📐 Welche Maßzahl (Measure) sollte man wählen?
@@ -15,9 +15,9 @@ SUM(Reihenfolge)	Visualisierung operativer Wichtigkeit / geplante Umsetzung
 AVERAGE(Reifegrad)	Bewertung der strukturellen Reife je Prio
 COUNTAX(FILTER(...), ...)	Anteile spezifischer Kombinationen, z. B. „aktiv & kritisch“
 
-👉 In deinem Fall bedeutet SUM(Reihenfolge) eine gewichtete Sicht auf Prioritäten, basierend auf ihrer Einordnungsrelevanz in der Umsetzung.
+In deinem Fall bedeutet SUM(Reihenfolge) eine gewichtete Sicht auf Prioritäten, basierend auf ihrer Einordnungsrelevanz in der Umsetzung.
 
-🔍 Allgemeine Interpretation – worauf achten?
+Allgemeine Interpretation – worauf achten?
 Dominanz prüfen
 Gibt es einen dominanten Bereich? Das zeigt, wo Ressourcen gebunden sind oder wo Fokus liegt.
 
@@ -32,7 +32,7 @@ Die Grafik dient oft als Einstieg für Fragen wie:
 „Sind unsere Prioritäten noch aktuell?“
 „Ist unsere Umsetzung deckungsgleich mit unserer Strategie?“
 
-🧭 Empfehlungen für Interpretation im Managementkontext
+Empfehlungen für Interpretation im Managementkontext
 Visualer Hinweis	Was es bedeuten kann
 Eine Prio dominiert (z. B. B > 50 %)	Operative Dringlichkeit – „jetzt handeln“
 Viele A & C, wenig B	Strategische Pipeline noch nicht aktiviert
