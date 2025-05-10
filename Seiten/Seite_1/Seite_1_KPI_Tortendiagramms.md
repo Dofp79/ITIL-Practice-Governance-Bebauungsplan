@@ -1,4 +1,6 @@
 
+Seite_1_KPI_Tortendiagramms.md
+
 ![image](https://github.com/user-attachments/assets/dcb4b387-14ca-4c96-9905-aeae1d951f63)
 
 
@@ -6,7 +8,7 @@
 Zweck eines solchen KPI-Tortendiagramms
 Ein Tortendiagramm stellt Anteile am Ganzen dar und eignet sich ideal, um die Verteilung von Prioritäten, Reifegraden, Kategorien oder Ressourcenzuordnungen sichtbar zu machen. Ziel ist es, Muster und Schwerpunkte schnell zu erfassen.
 
-📐 Welche Maßzahl (Measure) sollte man wählen?
+Welche Maßzahl (Measure) sollte man wählen?
 Die Maßzahl sollte den strategischen Steuerungsfokus widerspiegeln. Übliche und bewährte KPIs:
 
 Maßzahl (Measure)	Bedeutung / Einsatzfall
