@@ -32,6 +32,28 @@ SWITCH(TRUE(),
 //   - Arbeite iterativ mit Feedback
 //
 
+KPI_Summe_Reifegrade_Pro_Practice = 
+CALCULATE(
+    COUNTROWS(ITIL_Practice_Catalogue_07052025),
+    ALLEXCEPT(ITIL_Practice_Catalogue_07052025, ITIL_Practice_Catalogue_07052025[ITIL Practice])
+)
+//
+// Measure:    KPI_Summe_Reifegrade_Pro_Practice
+// Tabelle:    ITIL_Practice_Catalogue_07052025
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Zählt alle vorhandenen Reifegrad-Einträge pro Practice
+// Beschreibung:
+//   - Nutzt COUNTROWS in Kombination mit ALLEXCEPT, um die Anzahl der Reifegrad-Zeilen pro ITIL Practice zu bestimmen
+//   - Ignoriert Filter auf andere Spalten, berücksichtigt jedoch den aktuellen Practice-Kontext
+//   - Ideal für Matrix-Visuals zur Darstellung von Reifegrad-Zuweisungen je Practice
+// Prinzipien:
+//   - Arbeite iterativ mit Feedback
+//   - Denk und arbeite ganzheitlich
+//   - Fördere Transparenz
+//
+
 Reifegrad_Wert = 
 IF(
     NOT ISBLANK([Reifegrad]),
