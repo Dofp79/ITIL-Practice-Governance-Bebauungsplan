@@ -1,6 +1,7 @@
 Interpretation der Visualisierungen auf Seite 2
 1. Matrix: ITIL Phasen × Blueprint-Kategorie (Backstage, Frontstage, Self Service)
-2. ![image](https://github.com/user-attachments/assets/7d887244-5ed5-4032-9c55-50a96d3fd02d)
+
+![image](https://github.com/user-attachments/assets/7d887244-5ed5-4032-9c55-50a96d3fd02d)
 
  
 Zeigt, wie viele ITIL Practices in den jeweiligen Phasen (Service Design, Operation etc.) sichtbar sind – und wo (Frontstage, Backstage, Self Service).
