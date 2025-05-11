@@ -83,9 +83,9 @@ Interpretation:
   
   •	Handlungsempfehlung:
   
-    o	Initiativen zur Förderung von Self-Service oder zur Sichtbarmachung strategischer Practices (z. B. in Frontstage) prüfen.
+   - Initiativen zur Förderung von Self-Service oder zur Sichtbarmachung strategischer Practices (z. B. in Frontstage) prüfen.
     
-    o	Unterstützung für agile, sichtbare Prozesse wie Service Request oder Change Management stärken.
+   - Unterstützung für agile, sichtbare Prozesse wie Service Request oder Change Management stärken.
     
 ________________________________________
 Beispiel 2: Service Operation mit Frontstage-Präsenz
@@ -100,11 +100,11 @@ Interpretation:
   
   •	Handlungsempfehlung:
   
-    o	Fokus auf Reifegradsteigerung dieser Practices setzen.
+   - Fokus auf Reifegradsteigerung dieser Practices setzen.
     
-    o	Sicherstellen, dass diese Kritischen Schnittstellen vollständig und stabil betrieben werden.
+   - Sicherstellen, dass diese Kritischen Schnittstellen vollständig und stabil betrieben werden.
     
-    o	Eignen sich für Kennzahlen-Visualisierungen im IT-Strategie-Dashboard.
+   - Eignen sich für Kennzahlen-Visualisierungen im IT-Strategie-Dashboard.
     
 
 ________________________________________
