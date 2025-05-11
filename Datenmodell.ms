@@ -571,6 +571,30 @@ IF (
 //   - Fokussiere dich auf den Wert
 //
 
+KPI_Anzahl_Phase_Zuordnung =
+CALCULATE(
+    DISTINCTCOUNT(tbl_ITIL_Bebauungsplan_Map[Phase]),
+    ALLEXCEPT(tbl_ITIL_Bebauungsplan_Map, tbl_ITIL_Bebauungsplan_Map[Practice])
+)
+// 
+// Dokumentation
+// Measure:    KPI_Anzahl_Phase_Zuordnung
+// Tabelle:    tbl_ITIL_Bebauungsplan_Map
+// Projekt:    ITIL Practice Governance & Steuerung
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Ermittelt, wie viele verschiedene Lifecycle-Phasen einer ITIL Practice zugeordnet sind
+// Beschreibung:
+//   - Berechnet die Anzahl unterschiedlicher ITIL Lifecycle Phasen je Practice
+//   - Unterstützt die Tooltip-Visualisierung zur strategischen Bewertung
+//   - Dient der Governance zur Identifikation von Querschnittspractices
+// Prinzipien:
+//   - Denk und arbeite ganzheitlich
+//   - Fokussiere dich auf den Wert
+//   - Arbeite iterativ mit Feedback
+//
+
+
 -- 7. Visuals:
 -- Matrix: ITIL Practice × Phase (Ampel-Farbcodierung)
 -- KPI-Karten: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
