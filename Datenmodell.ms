@@ -594,6 +594,35 @@ CALCULATE(
 //   - Arbeite iterativ mit Feedback
 //
 
+Tooltip_Info =
+"Prio: " & SELECTEDVALUE('ITIL_Practice_Catalogue_07052025'[Prio]) & UNICHAR(10) &
+"Nutzung: " & SELECTEDVALUE('ITIL_Practice_Catalogue_07052025'[Nutzung]) & UNICHAR(10) &
+"Reifegrad: " & SELECTEDVALUE('ITIL_Practice_Catalogue_07052025'[Reifegrad])
+//
+// Measure:     Tooltip_Info
+// Tabelle:     ITIL_Practice_Catalogue_07052025
+// Projekt:     ITIL Practice Governance & Steuerung pro Phase
+// Autor:       Doniman Francisco Peña Parra
+// Erstellt:    11.05.2025
+// Zweck:       Kompakte Darstellung relevanter Practice-Informationen im Tooltip-Format
+//
+// Beschreibung:
+//   - Kombiniert die Felder „Prio“, „Nutzung“ und „Reifegrad“ als einzeiligen Text für Tooltips
+//   - Unterstützt visuelle Tooltips in Matrix-, Balken- oder Kartenvisualisierungen
+//   - Bricht die Inhalte sauber mit Zeilenumbrüchen (UNICHAR(10)) auf
+//
+// Vorteile:
+//   - Klar lesbare, vertikal strukturierte Info im Tooltip
+//   - Keine redundanten Felder nötig
+//   - Ideal bei engen Platzverhältnissen in kompakten Visuals
+//
+// Prinzipien nach ITIL 4:
+//   - Fokussiere dich auf den Wert
+//   - Halte es einfach und praktisch
+//   - Fördere Transparenz
+//
+
+
 
 -- 7. Visuals:
 -- Matrix: ITIL Practice × Phase (Ampel-Farbcodierung)
