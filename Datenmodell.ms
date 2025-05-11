@@ -525,6 +525,52 @@ CALCULATE(
 //   - Fördere Transparenz
 //   - Fokussiere dich auf den Wert
 
+Filter_Aktuelle_Phase = 
+IF (
+    HASONEVALUE(tbl_ITIL_Bebauungsplan_Map[Phase]),
+    SELECTEDVALUE(tbl_ITIL_Bebauungsplan_Map[Phase]),
+    "Alle Phasen"
+)
+//
+// Dokumentation
+// Measure:    Filter_Aktuelle_Phase
+// Tabelle:    tbl_ITIL_Bebauungsplan_Map
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Gibt die aktuell ausgewählte ITIL Lifecycle Phase zurück oder „Alle Phasen“
+// Beschreibung:
+//   - Dient zur Anzeige des aktiven Phasenfilters als Info-Element im Dashboard
+//   - Unterstützt die Transparenz der aktuellen Filterkontext-Auswahl (Slicer)
+//   - Wird typischerweise in einer Card-Visualisierung dargestellt
+// Prinzipien:
+//   - Fördere Transparenz
+//   - Halte es einfach und praktisch
+//
+
+Filter_Aktuelle_Blueprint = 
+IF (
+    HASONEVALUE(tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie]),
+    SELECTEDVALUE(tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie]),
+    "Alle Sichtbarkeiten"
+)
+//
+// Dokumentation
+// Measure:    Filter_Aktuelle_Blueprint
+// Tabelle:    tbl_ITIL_Bebauungsplan_Map
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Gibt die aktuell gewählte Blueprint-Kategorie zurück oder „Alle Sichtbarkeiten“
+// Beschreibung:
+//   - Zeigt an, welcher Bereich im Service Blueprint aktuell ausgewählt wurde (Backstage, Frontstage, Self Service)
+//   - Ideal für obere Info-Karten (Filterkontext-Visualisierung)
+//   - Unterstützt das Prinzip der Transparenz und Benutzerorientierung
+// Prinzipien:
+//   - Fördere Transparenz
+//   - Fokussiere dich auf den Wert
+//
+
 -- 7. Visuals:
 -- Matrix: ITIL Practice × Phase (Ampel-Farbcodierung)
 -- KPI-Karten: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
