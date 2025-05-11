@@ -9,21 +9,21 @@ Elementübersicht des Datenmodells
 | Tabelle             | tbl_Practice_Kategorie           | ITIL 4 Kategorien (General, Service, Technical)       | Tabelle     |
 | Tabelle             | Tabelle_Blueprint_Kategorie      | Aggregierte Blueprint-Kategoriezählung                | Tabelle     |
 
-| Measures & KPIs     |                                  |                      |             |
-|---------------------|----------------------------------|----------------------|-------------|
-| KPI_Summe_Reifegrade_Pro_Practice | Zählt Reifegrade je Practice              | Measure     |
-| KPI_Practices_Je_Kategorie       | Anzahl Practices je ITIL Kategorie        | Measure     |
-| KPI_Ø_Reifegrad_Je_Kategorie     | Durchschnitts-Reifegrad je Kategorie      | Measure     |
-| KPI_FrontDesk / BackDesk / SelfService | Blueprint-Anteile je Sichtbarkeit    | Measure     |
-| KPI_Anzahl_Kritisch              | Kritische Practices (Reifegrad = 0)       | Measure     |
-| KPI_Aktive_Hochrelevante         | Aktive, hoch priorisierte Practices       | Measure     |
-| KPI_Ungeplant_Kritisch           | Kritisch & ungeplant                      | Measure     |
-| KPI_Ø_Reifegrad                  | Gesamtdurchschnitt Reifegrad              | Measure     |
-| KPI_Anzahl_Pro_Kategorie_und_Phase | Zählung je Kategorie × Phase           | Measure     |
-| KPI_Anzahl_Phase_Zuordnung       | Wie viele Phasen je Practice              | Measure     |
-| Filter_Aktuelle_Phase            | Zeigt aktuelle Phasenauswahl              | Measure     |
-| Filter_Aktuelle_Blueprint        | Zeigt aktuelle Blueprint-Auswahl          | Measure     |
-| Tooltip_Info                     | Dynamischer Tooltip mit Kontextdaten      | Measure     |
+| Measures & KPIs     |                                  |                     |        |
+|---------------------|----------------------------------|---------------------|--------|
+| KPI_Summe_Reifegrade_Pro_Practice | Zählt Reifegrade je Practice             |KPI     |
+| KPI_Practices_Je_Kategorie       | Anzahl Practices je ITIL Kategorie        | KPI    |
+| KPI_Ø_Reifegrad_Je_Kategorie     | Durchschnitts-Reifegrad je Kategorie      | KPI    |
+| KPI_FrontDesk / BackDesk / SelfService | Blueprint-Anteile je Sichtbarkeit   | KPI    |
+| KPI_Anzahl_Kritisch              | Kritische Practices (Reifegrad = 0)       | KPI    |
+| KPI_Aktive_Hochrelevante         | Aktive, hoch priorisierte Practices       | KPI    |
+| KPI_Ungeplant_Kritisch           | Kritisch & ungeplant                      | KPI    |
+| KPI_Ø_Reifegrad                  | Gesamtdurchschnitt Reifegrad              | KPI    |
+| KPI_Anzahl_Pro_Kategorie_und_Phase | Zählung je Kategorie × Phase            | KPI    |
+| KPI_Anzahl_Phase_Zuordnung       | Wie viele Phasen je Practice              | KPI    |
+| Filter_Aktuelle_Phase            | Zeigt aktuelle Phasenauswahl              | Filter |
+| Filter_Aktuelle_Blueprint        | Zeigt aktuelle Blueprint-Auswahl          | Filter |
+| Tooltip_Info                     | Dynamischer Tooltip mit Kontextdaten      | Info   |
 
 Beziehungen
 -----------
