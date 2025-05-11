@@ -9,7 +9,7 @@ Elementübersicht des Datenmodells
 | Tabelle             | tbl_Practice_Kategorie           | ITIL 4 Kategorien (General, Service, Technical)       | Tabelle     |
 | Tabelle             | Tabelle_Blueprint_Kategorie      | Aggregierte Blueprint-Kategoriezählung                | Tabelle     |
 
-| Measures & KPIs     |                                  |                                                        | Measure     |
+| Measures & KPIs     |                                  |                                                        |             |
 |---------------------|----------------------------------|--------------------------------------------------------|-------------|
 | KPI_Summe_Reifegrade_Pro_Practice | Zählt Reifegrade je Practice             | Measure     |
 | KPI_Practices_Je_Kategorie       | Anzahl Practices je ITIL Kategorie        | Measure     |
