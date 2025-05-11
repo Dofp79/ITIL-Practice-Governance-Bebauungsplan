@@ -2,7 +2,9 @@
 -- Power BI Datenmodell: ITIL Practice Governance & Bebauungsplan (mit Python/SharePoint-Anbindung)
 -- ===========================================
 
--- 1. Tabelle: ITIL_Practice_Catalogue_07052025
+-- 1. Taabelle:
+
+-- Haupttabelle: ITIL_Practice_Catalogue_07052025
 -- Quelle: SharePoint-Export via Python (z. B. mit pandas + Office365 REST API)
 -- Enthält zentrale Informationen zu Reifegrad, Nutzung, Phase, Blueprint, Prio etc.
 
@@ -32,28 +34,7 @@ SWITCH(TRUE(),
 //   - Arbeite iterativ mit Feedback
 //
 
-KPI_Summe_Reifegrade_Pro_Practice = 
-CALCULATE(
-    COUNTROWS(ITIL_Practice_Catalogue_07052025),
-    ALLEXCEPT(ITIL_Practice_Catalogue_07052025, ITIL_Practice_Catalogue_07052025[ITIL Practice])
-)
-//
-// Measure:    KPI_Summe_Reifegrade_Pro_Practice
-// Tabelle:    ITIL_Practice_Catalogue_07052025
-// Projekt:    ITIL Practice Governance & Bebauungsplan
-// Autor:      Doniman Francisco Peña Parra
-// Erstellt:   11.05.2025
-// Zweck:      Zählt alle vorhandenen Reifegrad-Einträge pro Practice
-// Beschreibung:
-//   - Nutzt COUNTROWS in Kombination mit ALLEXCEPT, um die Anzahl der Reifegrad-Zeilen pro ITIL Practice zu bestimmen
-//   - Ignoriert Filter auf andere Spalten, berücksichtigt jedoch den aktuellen Practice-Kontext
-//   - Ideal für Matrix-Visuals zur Darstellung von Reifegrad-Zuweisungen je Practice
-// Prinzipien:
-//   - Arbeite iterativ mit Feedback
-//   - Denk und arbeite ganzheitlich
-//   - Fördere Transparenz
-//
-
+-- Spalte:     Reifegrad_Num
 Reifegrad_Wert = 
 IF(
     NOT ISBLANK([Reifegrad]),
@@ -80,7 +61,7 @@ IF(
 //   - Arbeite iterativ mit Feedback
 //
 
--- 2. Tabelle: tbl_ITIL_Bebauungsplan_Map
+-- tbl_ITIL_Bebauungsplan_Map
 -- Zweck: Mapping von ITIL Practices zu den Sichtbarkeitsstufen im Service Blueprint
 -- Quelle: Abgeleitet aus 'Blueprint' Spalte in ITIL_Practice_Catalogue_07052025
 -- Spaltenbeschreibung:
@@ -125,7 +106,7 @@ SELECTCOLUMNS(
 -- | Service Desk        | Front Desk| Operation | 1 | Frontstage |
 -- Spalten: Practice | Bereich | Phase | Stufe | Blueprint_Kategorie
 
--- 3. Tabelle: tbl_Phase_Legende
+-- Tabelle: tbl_Phase_Legende
 -- Zweck: Einheitliche Darstellung und strukturierte Gruppierung von Lifecycle-Phasen
 -- Spaltenbeschreibung:
 --   - Phase: Name der ITIL V3 Lifecycle-Phase (z. B. Service Operation, Service Design)
@@ -157,7 +138,7 @@ DATATABLE(
     }
 )
 
--- 4. Tabelle: tbl_Practice_Kategorie (optional für ITIL 4)
+-- tbl_Practice_Kategorie (optional für ITIL 4)
 -- Zweck: Kategorisierung von Practices nach ITIL 4 Practice Domains
 -- Spaltenbeschreibung:
 --   - Practice_Kategorie: Oberkategorie nach ITIL 4 (z. B. Service Management)
@@ -184,7 +165,6 @@ DATATABLE(
     }
 )
 
-
 Tabelle_Blueprint_Kategorie = 
 SUMMARIZE(
     tbl_ITIL_Bebauungsplan_Map,
@@ -207,14 +187,58 @@ SUMMARIZE(
 //   - Denk und arbeite ganzheitlich
 //   - Fördere Transparenz
 
--- 5. Beziehungen:
+Tabelle_Blueprint_Kategorie =
+SUMMARIZE(
+    tbl_ITIL_Bebauungsplan_Map,
+    tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie],
+    "Anzahl", COUNTROWS(tbl_ITIL_Bebauungsplan_Map)
+)
+//
+// Dokumentation
+// Tabelle:    Tabelle_Blueprint_Kategorie -- Blueprint-Kategorie-Zähler (z. B. für Filter oder Visual-Abgrenzung)
+// Quelle:     tbl_ITIL_Bebauungsplan_Map
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   10.05.2025
+// Zweck:      Bereitstellung einer Tabelle zur Anzahl Practices je Blueprint-Kategorie
+// Beschreibung:
+//   - Ideal für Matrix-Visuals oder Gruppierungsanalysen
+//   - Nutzt die aggregierte Kategorie: Frontstage, Backstage, Self Service
+// Prinzipien:
+//   - Denk und arbeite ganzheitlich
+//   - Fördere Transparenz
+//
+
+-- 2. Beziehungen:
+
 -- ITIL_Practice_Catalogue_07052025[ITIL Practice] 1:* tbl_ITIL_Bebauungsplan_Map[Practice]
 -- ITIL_Practice_Catalogue_07052025[Phase]         *:* tbl_Phase_Legende[Phase]
 -- ITIL_Practice_Catalogue_07052025[Kategorie]     *:* tbl_Practice_Kategorie[Practice_Kategorie]
 
--- 6. Measures / KPIs:
+-- 3. Measures / KPIs:
 
--- KPI: Anzahl Practices pro ITIL 4 Kategorie
+KPI_Summe_Reifegrade_Pro_Practice = 
+CALCULATE(
+    COUNTROWS(ITIL_Practice_Catalogue_07052025),
+    ALLEXCEPT(ITIL_Practice_Catalogue_07052025, ITIL_Practice_Catalogue_07052025[ITIL Practice])
+)
+//
+// Measure:    KPI_Summe_Reifegrade_Pro_Practice
+// Tabelle:    ITIL_Practice_Catalogue_07052025
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Zählt alle vorhandenen Reifegrad-Einträge pro Practice
+// Beschreibung:
+//   - Nutzt COUNTROWS in Kombination mit ALLEXCEPT, um die Anzahl der Reifegrad-Zeilen pro ITIL Practice zu bestimmen
+//   - Ignoriert Filter auf andere Spalten, berücksichtigt jedoch den aktuellen Practice-Kontext
+//   - Ideal für Matrix-Visuals zur Darstellung von Reifegrad-Zuweisungen je Practice
+// Prinzipien:
+//   - Arbeite iterativ mit Feedback
+//   - Denk und arbeite ganzheitlich
+//   - Fördere Transparenz
+//
+
 KPI_Practices_Je_Kategorie = 
 CALCULATE(
     COUNTROWS(ITIL_Practice_Catalogue_07052025),
@@ -248,7 +272,6 @@ CALCULATE(
 //   - Halte es einfach und praktisch
 //
 
--- KPI: Ø Reifegrad pro Practice-Kategorie
 KPI_Ø_Reifegrad_Je_Kategorie = 
 AVERAGEX(
     FILTER(
@@ -283,29 +306,6 @@ AVERAGEX(
 // Prinzipien:
 //   - Fokussiere dich auf den Wert
 //   - Optimiere und automatisiere
-//
-
--- Blueprint-Kategorie-Zähler (z. B. für Filter oder Visual-Abgrenzung)
-Tabelle_Blueprint_Kategorie =
-SUMMARIZE(
-    tbl_ITIL_Bebauungsplan_Map,
-    tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie],
-    "Anzahl", COUNTROWS(tbl_ITIL_Bebauungsplan_Map)
-)
-//
-// Dokumentation
-// Tabelle:    Tabelle_Blueprint_Kategorie
-// Quelle:     tbl_ITIL_Bebauungsplan_Map
-// Projekt:    ITIL Practice Governance & Bebauungsplan
-// Autor:      Doniman Francisco Peña Parra
-// Erstellt:   10.05.2025
-// Zweck:      Bereitstellung einer Tabelle zur Anzahl Practices je Blueprint-Kategorie
-// Beschreibung:
-//   - Ideal für Matrix-Visuals oder Gruppierungsanalysen
-//   - Nutzt die aggregierte Kategorie: Frontstage, Backstage, Self Service
-// Prinzipien:
-//   - Denk und arbeite ganzheitlich
-//   - Fördere Transparenz
 //
 
 -- Anzahl Practices je Blueprint-Ebene
@@ -477,13 +477,63 @@ CALCULATE(
 //   - Optimiere und automatisiere
 //
 
+Phase_Bewertung = 
+MAXX(
+    ITIL_Practice_Catalogue_07052025,
+    VALUE(LEFT(ITIL_Practice_Catalogue_07052025[Reifegrad],1))
+)
+//
+// Dokumentation
+// Measure:    Phase_Bewertung
+// Tabelle:    ITIL_Practice_Catalogue_07052025
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   12.05.2025
+// Zweck:      Zeigt den höchsten Reifegrad (0–2) je ITIL Practice × Lifecycle Phase an
+// Beschreibung:
+//   - Verwendet das erste Zeichen der Spalte [Reifegrad] zur Ableitung der numerischen Stufe
+//   - Unterstützt Matrix-Darstellungen mit farblicher Codierung nach Reifegrad
+// Prinzipien:
+//   - Halte es einfach und praktisch
+//   - Fokussiere dich auf den Wert
+//
+
+KPI_Anzahl_Pro_Kategorie_und_Phase = 
+CALCULATE(
+    COUNTROWS(tbl_ITIL_Bebauungsplan_Map),
+    ALLEXCEPT(
+        tbl_ITIL_Bebauungsplan_Map,
+        tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie],
+        tbl_ITIL_Bebauungsplan_Map[Phase]
+    )
+)
+//
+// Dokumentation
+// Measure:    KPI_Anzahl_Pro_Kategorie_und_Phase
+// Tabelle:    tbl_ITIL_Bebauungsplan_Map
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Ermittelt die Anzahl der Practices je Kombination aus Blueprint-Kategorie und ITIL Lifecycle-Phase
+// Beschreibung:
+//   - Unterstützt eine Matrix-Visualisierung mit Spalten: Blueprint_Kategorie (z. B. Frontstage, Backstage, Self Service)
+//     und Zeilen: ITIL Lifecycle-Phase (z. B. Service Operation, Service Transition)
+//   - Erlaubt ein strategisches Lagebild über Sichtbarkeit je Lebenszyklusabschnitt
+//   - Grundlage für Ableitungen von Investitionsbedarf oder UX-/Prozess-Reife
+// Prinzipien (ITIL 4):
+//   - Denk und arbeite ganzheitlich
+//   - Fördere Transparenz
+//   - Fokussiere dich auf den Wert
+
 -- 7. Visuals:
 -- Matrix: ITIL Practice × Phase (Ampel-Farbcodierung)
 -- KPI-Karten: KPI_Anzahl_Kritisch, KPI_Ø_Reifegrad, KPI_Aktive_Hochrelevante
 -- Filter: Nutzung, Prio, Phase, Blueprint_Kategorie, Practice_Kategorie
 -- Synoptic Panel: Blueprint-Darstellung (Frontstage vs. Backstage)
 
--- 8. Power Query Beispiel: Automatischer Zugriff auf aktuelle Datei via SharePoint
+-- DAX Automatischer Zugriffe:
+
+-- Power Query Beispiel: Automatischer Zugriff auf aktuelle Datei via SharePoint
 let
     Quelle = SharePoint.Files("https://<deinTenant>.sharepoint.com/sites/<DeinSite>", [ApiVersion = 15]),
     Gefiltert = Table.SelectRows(Quelle, each Text.StartsWith([Name], "Liste_Aktuell")),
