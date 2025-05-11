@@ -11,7 +11,7 @@ Elementübersicht des Datenmodells
 
 | Measures & KPIs     |                                  |                                                        | Measure     |
 |---------------------|----------------------------------|--------------------------------------------------------|-------------|
-| KPI_Summe_Reifegrade_Pro_Practice | Zählt Reifegrade je Practice              | Measure     |
+| KPI_Summe_Reifegrade_Pro_Practice | Zählt Reifegrade je Practice             | Measure     |
 | KPI_Practices_Je_Kategorie       | Anzahl Practices je ITIL Kategorie        | Measure     |
 | KPI_Ø_Reifegrad_Je_Kategorie     | Durchschnitts-Reifegrad je Kategorie      | Measure     |
 | KPI_FrontDesk / BackDesk / SelfService | Blueprint-Anteile je Sichtbarkeit    | Measure     |
