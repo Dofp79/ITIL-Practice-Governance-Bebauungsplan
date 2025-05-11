@@ -32,6 +32,32 @@ SWITCH(TRUE(),
 //   - Arbeite iterativ mit Feedback
 //
 
+Reifegrad_Wert = 
+IF(
+    NOT ISBLANK([Reifegrad]),
+    VALUE(LEFT([Reifegrad],1)),
+    BLANK()
+)
+
+//
+// Dokumentation
+// Spalte:     Reifegrad_Num
+// Tabelle:    ITIL_Practice_Catalogue_07052025
+// Projekt:    ITIL Practice Governance & Bebauungsplan
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   11.05.2025
+// Zweck:      Wandelt den textbasierten Reifegrad (z. B. "2 - Wiederholbar") in eine numerische Bewertungsbasis
+// Beschreibung:
+//   - Extrahiert die erste Ziffer aus dem Reifegrad-Feld per LEFT(...,1)
+//   - Wandelt den Wert mit VALUE() in eine Zahl um (z. B. "2" → 2)
+//   - Dient als Grundlage für Berechnungen, Scoring, Durchschnitts-KPIs und Formatierungslogik
+//   - Unterstützt Visualisierungen mit farblicher Ampellogik und horizontale Benchmark-Vergleiche
+// Prinzipien:
+//   - Halte es einfach und praktisch
+//   - Optimiere und automatisiere
+//   - Arbeite iterativ mit Feedback
+//
+
 -- 2. Tabelle: tbl_ITIL_Bebauungsplan_Map
 -- Zweck: Mapping von ITIL Practices zu den Sichtbarkeitsstufen im Service Blueprint
 -- Quelle: Abgeleitet aus 'Blueprint' Spalte in ITIL_Practice_Catalogue_07052025
