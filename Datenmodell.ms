@@ -690,10 +690,11 @@ in
 
 let
     Quelle = SharePoint.Files("https://fhhportal.ondataport.de/websites/p_013/078", [ApiVersion = 15]),
-    Gefiltert = Table.SelectRows(Quelle, each Text.StartsWith([Name], "Liste_Aktuell")),
+    Gefiltert = Table.SelectRows(Quelle, each Text.Contains([Folder Path], "IT3 Rollen Canvas") and Text.EndsWith([Extension], ".xlsx")),
     Sortiert = Table.Sort(Gefiltert, {{"Date modified", Order.Descending}}),
-    ErsteDatei = Table.FirstN(Sortiert,1),
-    Inhalt = Table.AddColumn(ErsteDatei, "Custom", each Excel.Workbook([Content])),
-    Expandiert = Table.ExpandTableColumn(Inhalt, "Custom", {"Data"}, {"Data"})
+    ErsteDatei = Table.FirstN(Sortiert, 1),
+    Inhalt = Table.AddColumn(ErsteDatei, "Custom", each Excel.Workbook([Content], true)),
+    Expandiert = Table.ExpandTableColumn(Inhalt, "Custom", {"Data"}, {"ITIL_Practice_Katalog"})
 in
     Expandiert
+
