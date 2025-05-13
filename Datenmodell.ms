@@ -663,7 +663,7 @@ in
 Falsche Syntax für ",". (DAX(SharePoint.Files("https://fhhportal.ondataport.de/websites/p_013/078", [ApiVersion = 15]), Gefiltert = Table.SelectRows(Quelle, each Text.StartsWith([Name], "Liste_Aktuell")), Sortiert = Table.Sort(Gefiltert, {{"Date modified", Order.Descending}}), ErsteDatei = Table.FirstN(Sortiert,1), Inhalt = Table.AddColumn(ErsteDatei, "Custom", each Excel.Workbook([Content])), Expandiert = Table.ExpandTableColumn(Inhalt, "Custom", {"Data"}, {"Data"})in Expandiert// Dokumentation// Measure: AktivePhasen_Heute// Tabelle: ITIL_Practice_Catalogue_07052025// Projekt: ITIL Practice Governance & Bebauungsplan// Autor: Doniman Francisco Peña Parra// Erstellt: 08.05.2025// Zweck: Ermittelt die Anzahl der aktiven Projektphasen am heutigen Kalendertag// Beschreibung:// - Zählt, wie viele Zeilen in der Tages-Roadmap dem aktuellen Datum entsprechen// - Grundlage: Jede Zeile in 'Roadmap_Tage' repräsentiert einen aktiven Phasentag// - Unterstützt Daily Standups, Tages-KPIs und Sprintsteuerung// - Einsatz z. B. auf KPI-Karten oder als Indikator für Auslastung// Prinzipien:// - Fokussiere dich auf den Wert// - Halte es einfach und praktisch)).
 
 
-let    Quelle = SharePoint.Files("https://fhhportal.ondataport.de/websites/p_013/078", [ApiVersion = 15]),
+let    Quelle = SharePoint.Files("https://", [ApiVersion = ]),
     Gefiltert = Table.SelectRows(Quelle, each Text.StartsWith([Name], "Liste_Aktuell")),
     Sortiert = Table.Sort(Gefiltert, {{"Date modified", Order.Descending}}),
     ErsteDatei = Table.FirstN(Sortiert,1),
@@ -687,9 +687,10 @@ in
 // Prinzipien:
 //   - Fokussiere dich auf den Wert
 //   - Halte es einfach und praktisch
+//   = Quelle{[Id="c0c92ddb-204b-45d8-af7c-e805b0e1c462"]}[Items]
 
 let
-    Quelle = SharePoint.Files("https://fhhportal.ondataport.de/websites/p_013/078", [ApiVersion = 15]),
+    Quelle = SharePoint.Files("https:", [ApiVersion = ]),
     Gefiltert = Table.SelectRows(Quelle, each Text.Contains([Folder Path], "IT3 Rollen Canvas") and Text.EndsWith([Extension], ".xlsx")),
     Sortiert = Table.Sort(Gefiltert, {{"Date modified", Order.Descending}}),
     ErsteDatei = Table.FirstN(Sortiert, 1),
