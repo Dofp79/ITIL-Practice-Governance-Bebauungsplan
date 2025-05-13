@@ -688,3 +688,12 @@ in
 //   - Fokussiere dich auf den Wert
 //   - Halte es einfach und praktisch
 
+let
+    Quelle = SharePoint.Files("https://fhhportal.ondataport.de/websites/p_013/078", [ApiVersion = 15]),
+    Gefiltert = Table.SelectRows(Quelle, each Text.StartsWith([Name], "Liste_Aktuell")),
+    Sortiert = Table.Sort(Gefiltert, {{"Date modified", Order.Descending}}),
+    ErsteDatei = Table.FirstN(Sortiert,1),
+    Inhalt = Table.AddColumn(ErsteDatei, "Custom", each Excel.Workbook([Content])),
+    Expandiert = Table.ExpandTableColumn(Inhalt, "Custom", {"Data"}, {"Data"})
+in
+    Expandiert
