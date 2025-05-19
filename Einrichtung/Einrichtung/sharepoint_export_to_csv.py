@@ -1,7 +1,7 @@
 from office365.sharepoint.client_context import ClientContext
 from office365.runtime.auth.authentication_context import AuthenticationContext
 import pandas as pd
-
+ 
 # ===========================================================
 # Skriptname:   sharepoint_export_to_csv.py
 # Projekt:      ITIL-Bebauungsplan
