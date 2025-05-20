@@ -25,7 +25,7 @@ Elementübersicht des Datenmodells
 | Filter_Aktuelle_Blueprint        | Zeigt aktuelle Blueprint-Auswahl          | Filter |
 | Tooltip_Info                     | Dynamischer Tooltip mit Kontextdaten      | Info   |
 
-Beziehungen
+Beziehungen 
 -----------
 - ITIL_Practice_Catalogue_07052025[ITIL Practice] → tbl_ITIL_Bebauungsplan_Map[Practice]
 - ITIL_Practice_Catalogue_07052025[Phase] → tbl_Phase_Legende[Phase]
