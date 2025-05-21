@@ -617,7 +617,7 @@ Tooltip_Info =
 //   - Ideal bei engen Platzverhältnissen in kompakten Visuals
 //
 // Prinzipien nach ITIL 4:
-//   - Fokussiere dich auf den Wert
+//   - Fokussiere dich auf den Wert 
 //   - Halte es einfach und praktisch
 //   - Fördere Transparenz
 //
