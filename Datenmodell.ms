@@ -363,7 +363,7 @@ CALCULATE(
 // Beschreibung:
 //   - Bezieht sich auf Prozesse, die Nutzende selbstständig auslösen oder abwickeln können
 //   - Fördert digitale Serviceerfahrungen und Automatisierung
-// Prinzipien:
+// Prinzipien: 
 //   - Optimiere und automatisiere
 //   - Halte es einfach und praktisch
 //
