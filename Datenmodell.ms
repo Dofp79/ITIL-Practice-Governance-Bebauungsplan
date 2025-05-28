@@ -41,7 +41,7 @@ IF(
     VALUE(LEFT([Reifegrad],1)),
     BLANK()
 )
-
+ 
 //
 // Dokumentation
 // Spalte:     Reifegrad_Num
