@@ -192,7 +192,7 @@ SUMMARIZE(
     tbl_ITIL_Bebauungsplan_Map,
     tbl_ITIL_Bebauungsplan_Map[Blueprint_Kategorie],
     "Anzahl", COUNTROWS(tbl_ITIL_Bebauungsplan_Map)
-)
+) 
 //
 // Dokumentation
 // Tabelle:    Tabelle_Blueprint_Kategorie -- Blueprint-Kategorie-Zähler (z. B. für Filter oder Visual-Abgrenzung)
