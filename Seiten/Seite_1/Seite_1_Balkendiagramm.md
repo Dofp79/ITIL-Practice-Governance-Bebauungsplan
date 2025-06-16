@@ -9,7 +9,7 @@ Das gezeigte Balkendiagramm „KPI_BackDesk, KPI_FrontDesk und KPI_SelfService n
 ________________________________________
 Ziel des Diagramms
 Das Visual stellt die Anzahl von ITIL Practices je Sichtbarkeitskategorie im Service Blueprint dar – gruppiert in:
-•	 Backstage (intern, nicht direkt vom Kunden gesehen)
+•	 Backstage (intern, nicht direkt vom Kunden gesehen) 
 •	 Frontstage (direkter Kundenkontakt – z. B. Service Desk)
 •	 Self Service (vom Kunden selbst initiiert, automatisiert)
 ________________________________________
